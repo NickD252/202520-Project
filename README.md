@@ -8,3 +8,5 @@ Team members:
 Dunn, Nicholas (<https://github.com/NickD252>)
 
 Parker, Rylan (<https://github.com/CameronParker20>)
+
+White, Matthew (<https://github.com/mwwhite-code>)
