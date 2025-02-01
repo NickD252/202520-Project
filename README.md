@@ -20,3 +20,5 @@ Bryars, Joshua (<https://github.com/jbryars12345>)
 Higgins, Austin (<https://github.com/AHJS93>)
 
 Sewell, Daniel (<https://github.com/dsewell35>)
+
+Tidwell, Timothy (<https://github.com/ttidwell19>)
