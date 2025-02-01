@@ -25,3 +25,7 @@ Sewell, Daniel (<https://github.com/dsewell35>)
 
 Tidwell, Timothy (<https://github.com/ttidwell19>)
 >>>>>>> QA
+
+Inconsistencies:
+
+Missing Ethan Owen
