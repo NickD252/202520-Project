@@ -13,8 +13,10 @@ White, Matthew (<https://github.com/mwwhite-code>)
 
 Johnson, Ian (<https://github.com/Gamer-Named-Ian>)
 
-Spencer, Claiborne (https://github.com/claibornejeffstate)
+Spencer, Claiborne (<https://github.com/claibornejeffstate>)
 
 Bryars, Joshua (<https://github.com/jbryars12345>)
 
-Higgins, Austin (https://github.com/AHJS93)
+Higgins, Austin (<https://github.com/AHJS93>)
+
+Sewell, Daniel (<https://github.com/dsewell35>)
