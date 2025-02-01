@@ -16,3 +16,5 @@ Johnson, Ian (<https://github.com/Gamer-Named-Ian>)
 Spencer, Claiborne (https://github.com/claibornejeffstate)
 
 Bryars, Joshua (<https://github.com/jbryars12345>)
+
+Higgins, Austin (https://github.com/AHJS93)
