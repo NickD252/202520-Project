@@ -14,3 +14,5 @@ White, Matthew (<https://github.com/mwwhite-code>)
 Johnson, Ian (<https://github.com/Gamer-Named-Ian>)
 
 Spencer, Claiborne (https://github.com/claibornejeffstate)
+
+Bryars, Joshua (<https://github.com/jbryars12345>)
