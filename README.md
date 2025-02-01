@@ -1,7 +1,7 @@
 # 202520-Project
 Project for 202520
 
-The purpose of this repository:
+The purpose of this repository: Register Quiz
 
 Team members:
 
