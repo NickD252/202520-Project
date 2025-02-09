@@ -1,8 +1,6 @@
 # 202520-Project
 Project for 202520
 
-<<<<<<< HEAD
-=======
 The purpose of this repository: Register Quiz website
 
 Team members:
@@ -24,7 +22,6 @@ Higgins, Austin (<https://github.com/AHJS93>)
 Sewell, Daniel (<https://github.com/dsewell35>)
 
 Tidwell, Timothy (<https://github.com/ttidwell19>)
->>>>>>> QA
 
 Inconsistencies:
 
