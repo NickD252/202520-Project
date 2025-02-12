@@ -1,28 +1,17 @@
 # 202520-Project
 Project for 202520
 
-The purpose of this repository: Register Quiz website
+# The purpose of this repository: Register Quiz website
 
-Team members:
+# Team Members:
 
-Dunn, Nicholas (<https://github.com/NickD252>)
-
-Parker, Rylan (<https://github.com/CameronParker20>)
-
-White, Matthew (<https://github.com/mwwhite-code>)
-
-Johnson, Ian (<https://github.com/Gamer-Named-Ian>)
-
-Spencer, Claiborne (<https://github.com/claibornejeffstate>)
-
-Bryars, Joshua (<https://github.com/jbryars12345>)
-
-Higgins, Austin (<https://github.com/AHJS93>)
-
-Sewell, Daniel (<https://github.com/dsewell35>)
-
-Tidwell, Timothy (<https://github.com/ttidwell19>)
-
-Inconsistencies:
-
-Missing Ethan Owen
+ - Dunn, Nicholas (NickD252)  
+ - Parker, Rylan (CameronParker20)  
+ - White, Matthew (mwwhite-code)  
+ - Johnson, Ian (Gamer-Named-Ian)  
+ - Spencer, Claiborne (claibornejeffstate)  
+ - Bryars, Joshua (jbryars12345)  
+ - Higgins, Austin (AHJS93)  
+ - Sewell, Daniel (dsewell35)  
+ - Tidwell, Timothy (ttidwell19)  
+ - Owen, Ethan (woody7283)
