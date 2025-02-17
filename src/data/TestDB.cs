@@ -281,8 +281,10 @@ namespace coding_lms.data {
 		/// </summary>
 		/// <param name="quiz">GUID type; the Quiz UID value</param>
 		/// <returns></returns>
-			return null;
 		public IEnumerable<Question> GetQuestions(string course = null) {
+			return this.ExecuteSProc<Question>("dbo.ap_Question_Get @CourseID=@cid"
+				, new SqlParameter("@cid", course ?? ( object )DBNull.Value)
+			);
 		}
 
 
