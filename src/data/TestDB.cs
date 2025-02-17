@@ -281,8 +281,8 @@ namespace coding_lms.data {
 		/// </summary>
 		/// <param name="quiz">GUID type; the Quiz UID value</param>
 		/// <returns></returns>
-		public Question GetQuestions(Guid quiz) {
 			return null;
+		public IEnumerable<Question> GetQuestions(string course = null) {
 		}
 
 
