@@ -393,6 +393,7 @@
     </Compile>
     <Compile Include="ProfileDrivenMenu.aspx.cs">
       <DependentUpon>ProfileDrivenMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ProfileDrivenMenu.aspx.designer.cs">
       <DependentUpon>ProfileDrivenMenu.aspx</DependentUpon>

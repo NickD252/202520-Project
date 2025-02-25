@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Profile Menu" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProfileDrivenMenu.aspx.cs" Inherits="root.About" %>
+﻿<%@ Page Title="Profile Driven Menu" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProfileDrivenMenu.aspx.cs" Inherits="root.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
