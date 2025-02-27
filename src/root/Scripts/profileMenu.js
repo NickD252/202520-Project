@@ -6,12 +6,12 @@ function openNav() {
     if (sidebar.style.width == "20rem") {
         sidebar.style.width = "0";
         bdstyle.marginRight = "0";
-        bdstyle.transition = "0.3s";
+        bdstyle.transition = "0.7s";
         bdstyle.backgroundColor = "white";
         submenu.style.width = "0";
     } else {
         sidebar.style.width = "20rem";
-        bdstyle.transition = "0.3s";
+        bdstyle.transition = "0.7s";
         bdstyle.marginRight = "20rem";
         bdstyle.backgroundColor = "rgba(0,0,0,0.4)";
     }
@@ -21,7 +21,7 @@ function closeNav() {
     sidebar.style.width = "0";
     bdstyle.marginRight = "0";
     bdstyle.backgroundColor = "white";
-    bdstyle.transition = "0.3s";
+    bdstyle.transition = "0.7s";
     submenu.style.width = "0";
 }
 
@@ -38,6 +38,6 @@ function closeAllMenus() {
     sidebar.style.width = "0";
     submenu.style.width = "0";
     bdstyle.marginRight = "0";
-    bdstyle.transition = "0.3s";
+    bdstyle.transition = "0.7s";
     bdstyle.backgroundColor = "white";
 }

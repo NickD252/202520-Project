@@ -16,7 +16,7 @@
 }
 
 #profileMenuNav {
-    transition: 0.3s;
+    transition: 0.7s;
 }
 
 .sidenav {
@@ -28,7 +28,7 @@
     right: 0;
     background-color: #212529;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.7s;
     padding-top: 60px;
 }
 
@@ -36,14 +36,15 @@
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #d3d3d3;
+        color: #c1c1c1;
         display: block;
-        transition: 0.3s;
-        font-size: larger;
+        transition: 0.7s;
+        font-size: 1.3rem;
     }
 
         .sidenav a:hover {
             color: #f1f1f1;
+            transition: 0.2s;
         }
 
     .sidenav .closebtn {

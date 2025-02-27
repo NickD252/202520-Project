@@ -61,8 +61,8 @@
         <div id="profileMenuNav" class="sidenav" style="justify-self:right">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" onclick="displayTerms()">Terms</a>
-            <a href="#">Quizzes</a>
-            <a href="#">Calendar</a>
+            <a href="#" onclick="closeAllMenus()">Quizzes</a>
+            <a href="#" onclick="closeAllMenus()">Calendar</a>
         </div>
         <div id="profileSubMenu" class="sidenav" style="justify-self:right">
             <a href="#" onclick="closeAllMenus()">Spring 2025 (202520)</a>
