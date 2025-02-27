@@ -60,13 +60,24 @@
                 <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Instructor menu</h5>
                 <button type="button" class="btn-close text-reset" style="filter: brightness(0) invert(1)" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="btn-group dropdown">
+            <div class="dropdown d-flex flex-column">
                 <button type="button" class="btn btn-secondary dropdown-toggle bg-dark link-light" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
                     Terms
                 </button>
                 <ul class="dropdown-menu bg-dark link-light">
                     <li class="mb-1">
                         <a href="#" class="dropdown-item link-light">Sub 1</a>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="dropdown-item link-light">Sub 1</a>
+                    </li>
+                </ul>
+                <ul class="bg-dark link-light">
+                    <li class="mb-1">
+                        <a href="#" class="link-light text-decoration-none">Quizzes</a>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="link-light text-decoration-none">Calendar</a>
                     </li>
                 </ul>
             </div>
