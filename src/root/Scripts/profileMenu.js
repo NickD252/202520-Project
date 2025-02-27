@@ -10,6 +10,7 @@ function openNav() {
         submenu.style.width = "0";
     } else {
         sidebar.style.width = "20rem";
+        bdstyle.transition = "0.5s";
         bdstyle.marginRight = "20rem";
         bdstyle.backgroundColor = "rgba(0,0,0,0.4)";
     }
