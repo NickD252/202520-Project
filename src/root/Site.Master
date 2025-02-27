@@ -13,8 +13,8 @@
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <!--script for bootstrap dropdown functionality-->
-    <script defer src="Scripts/bootstrap.bundle.min.js"></script>
+
+    <!--Style and JS references-->
     <script defer src="Scripts/profileMenu.js"></script>
     <link rel="stylesheet" href="Content/profileMenuStyles.css" />
 
@@ -58,45 +58,18 @@
             </div>
         </nav>
         <!---Profile Menu elements--->
-        <div id="mySidenav" class="sidenav" style="justify-self:right">
+        <div id="profileMenuNav" class="sidenav" style="justify-self:right">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" onclick="displayTerms()">Terms</a>
             <a href="#">Quizzes</a>
             <a href="#">Calendar</a>
         </div>
-        <div id="subMenu" class="sidenav" style="justify-self:right">
+        <div id="profileSubMenu" class="sidenav" style="justify-self:right">
             <a href="#" onclick="closeAllMenus()">Fall</a>
             <a href="#" onclick="closeAllMenus()">Fall</a>
             <a href="#" onclick="closeAllMenus()">Fall</a>
         </div>
-        <!--<div class="flex-shrink-0 p-3 bg-dark offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" id="menu" style="width:20rem;justify-self:right;height:100vh">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Instructor menu</h5>
-                <button type="button" class="btn-close text-reset" style="filter: brightness(0) invert(1)" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="dropdown d-flex flex-column">
-                <button type="button" class="btn btn-secondary dropdown-toggle bg-dark link-light" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-                    Terms
-                </button>
-                <ul class="dropdown-menu bg-dark link-light">
-                    <li class="mb-1">
-                        <a href="#" class="dropdown-item link-light">Sub 1</a>
-                    </li>
-                    <li class="mb-1">
-                        <a href="#" class="dropdown-item link-light">Sub 1</a>
-                    </li>
-                </ul>
-                <ul class="bg-dark link-light">
-                    <li class="mb-1">
-                        <a href="#" class="link-light text-decoration-none">Quizzes</a>
-                    </li>
-                    <li class="mb-1">
-                        <a href="#" class="link-light text-decoration-none">Calendar</a>
-                    </li>
-                </ul>
-            </div>
-        </div>-->
-        <!---#############--->
+        <!--------------------------->
         <div onclick="closeAllMenus()" class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

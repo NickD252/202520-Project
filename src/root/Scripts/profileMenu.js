@@ -1,35 +1,39 @@
-﻿function openNav() {
-    if (document.getElementById("mySidenav").style.width == "20rem") {
-        document.getElementById("mySidenav").style.width = "0";
-        document.body.style.marginRight = "0";
-        document.body.style.backgroundColor = "white";
-        document.getElementById("subMenu").style.width = "0";
+﻿const sidebar = document.getElementById("profileMenuNav");
+const submenu = document.getElementById("profileSubMenu");
+const bdstyle = document.body.style;
+
+function openNav() {
+    if (sidebar.style.width == "20rem") {
+        sidebar.style.width = "0";
+        bdstyle.marginRight = "0";
+        bdstyle.backgroundColor = "white";
+        submenu.style.width = "0";
     } else {
-        document.getElementById("mySidenav").style.width = "20rem";
-        document.body.style.marginRight = "20rem";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        sidebar.style.width = "20rem";
+        bdstyle.marginRight = "20rem";
+        bdstyle.backgroundColor = "rgba(0,0,0,0.4)";
     }
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.body.style.marginRight = "0";
-    document.body.style.backgroundColor = "white";
-    document.getElementById("subMenu").style.width = "0";
+    sidebar.style.width = "0";
+    bdstyle.marginRight = "0";
+    bdstyle.backgroundColor = "white";
+    submenu.style.width = "0";
 }
 
 function displayTerms() {
-    if (document.getElementById("subMenu").style.width == "15rem") {
-        document.getElementById("subMenu").style.width = "0";
+    if (submenu.style.width == "15rem") {
+        submenu.style.width = "0";
     } else {
-        document.getElementById("subMenu").style.width = "15rem";
-        document.getElementById("subMenu").style.marginRight = "20rem";
+        submenu.style.width = "15rem";
+        submenu.style.marginRight = "20rem";
     }
 }
 
 function closeAllMenus() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("subMenu").style.width = "0";
-    document.body.style.marginRight = "0";
-    document.body.style.backgroundColor = "white";
+    sidebar.style.width = "0";
+    submenu.style.width = "0";
+    bdstyle.marginRight = "0";
+    bdstyle.backgroundColor = "white";
 }
