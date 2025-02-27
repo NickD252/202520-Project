@@ -13,10 +13,13 @@
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!--script for bootstrap dropdown functionality-->
     <script defer src="Scripts/bootstrap.bundle.min.js"></script>
+    <script defer src="Scripts/profileMenu.js"></script>
+    <link rel="stylesheet" href="Content/profileMenuStyles.css" />
 
 </head>
-<body>
+<body">
     <form runat="server">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">
@@ -37,7 +40,7 @@
                                 <li><a runat="server" class="nav-link" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" class="nav-link" href="~/Account/Login">Log in</a></li>
                                 <!--Menu placeholder link button-->
-                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="offcanvasExample">Menu
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="offcanvasExample" onclick="openNav()">Menu
                                 </a>
                                 <!---------------------->
                             </ul>
@@ -55,7 +58,18 @@
             </div>
         </nav>
         <!---Profile Menu elements--->
-        <div class="flex-shrink-0 p-3 bg-dark offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" id="menu" style="width:20rem;justify-self:right;height:100vh">
+        <div id="mySidenav" class="sidenav" style="justify-self:right">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" onclick="displayTerms()">Terms</a>
+            <a href="#">Quizzes</a>
+            <a href="#">Calendar</a>
+        </div>
+        <div id="subMenu" class="sidenav" style="justify-self:right">
+            <a href="#" onclick="closeAllMenus()">Fall</a>
+            <a href="#" onclick="closeAllMenus()">Fall</a>
+            <a href="#" onclick="closeAllMenus()">Fall</a>
+        </div>
+        <!--<div class="flex-shrink-0 p-3 bg-dark offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" id="menu" style="width:20rem;justify-self:right;height:100vh">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Instructor menu</h5>
                 <button type="button" class="btn-close text-reset" style="filter: brightness(0) invert(1)" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -81,9 +95,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
         <!---#############--->
-        <div class="container body-content">
+        <div onclick="closeAllMenus()" class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
