@@ -65,9 +65,9 @@
             <a href="#">Calendar</a>
         </div>
         <div id="profileSubMenu" class="sidenav" style="justify-self:right">
-            <a href="#" onclick="closeAllMenus()">Fall</a>
-            <a href="#" onclick="closeAllMenus()">Fall</a>
-            <a href="#" onclick="closeAllMenus()">Fall</a>
+            <a href="#" onclick="closeAllMenus()">Spring 2025 (202520)</a>
+            <a href="#" onclick="closeAllMenus()">Fall 2025 (202510)</a>
+            <a href="#" onclick="closeAllMenus()">Summer 2024 (202430)</a>
         </div>
         <!--------------------------->
         <div onclick="closeAllMenus()" class="container body-content">
