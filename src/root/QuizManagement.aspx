@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="QuizManagement.aspx.cs" Inherits="coding_lms.QuizManagement" %>
+﻿<%@ Page Title="quizzes" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="QuizManagement.aspx.cs" Inherits="coding_lms.QuizManagement" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="d-flex mb-3">
         <div class="me-auto p-2">
