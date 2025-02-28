@@ -5,7 +5,7 @@ IDE: Microsoft Visual Studio 2022
 
 - **MasterPage Design:** Josh
 - **Profile-Driven Menu:** Austin  
-- **Quiz Management:** Ethan  
+- **Quiz Management:** Ethan and Austin
 - **Question Management:** Clay and Matthew  
 - **Terms View:** Rylan
 - **Sections View:** Ian
