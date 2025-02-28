@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace coding_lms
 {
-	public partial class QuizManagement : System.Web.UI.Page
+	public partial class quizzes : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
