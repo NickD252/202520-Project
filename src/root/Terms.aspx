@@ -1,9 +1,7 @@
-﻿<%@ Page Title="Terms View" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="coding_lms._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Terms.aspx.cs" Inherits="coding_lms.Terms" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
- 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Terms</title>
