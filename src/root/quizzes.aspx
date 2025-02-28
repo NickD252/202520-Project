@@ -8,28 +8,30 @@
             <button type="button" class="btn btn-success btn-lg">New</button>
         </div>
     </div>
-    <table id="quizManagementTable" class="table table-hover">
-        <tr>
-            <th>&nbsp;Name</th>
-            <th>Short&nbsp;</th>
-            <th>&nbsp;Random</th>
-            <th>&nbsp;PPQ</th>
-            <th>&nbsp;Actions</th>
-        </tr>
-        <tbody class="table-hover">
+    <table id="quizManagementTable" class="table table-hover table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>&nbsp;Name</th>
+                <th>&nbsp;Short</th>
+                <th>&nbsp;Random</th>
+                <th>&nbsp;PPQ</th>
+                <th>&nbsp;Actions</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover table-group-divider">
             <tr>
                 <td>lorem</td>
                 <td>lorem</td>
+                <td><input class="form-check-input" type="checkbox" value=""></td>
                 <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
+                <td><button type="button" class="btn btn-primary">Questions</button></td>
             </tr>
             <tr>
                 <td>lorem</td>
                 <td>lorem</td>
+                <td><input class="form-check-input" type="checkbox" value=""></td>
                 <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
+                <td><button type="button" class="btn btn-primary">Questions</button></td>
             </tr>
         </tbody>
     </table>
