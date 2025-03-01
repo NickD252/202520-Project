@@ -35,11 +35,17 @@
                             </div>
                             <span class="input-group-text" style="max-width:400px">Randomize</span>
                         </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <label id="invalidID"></label>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <label id="invalidName"></label>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id="createNewQuizBtn" onclick="createQuiz()" type="button" class="btn btn-success">Create</button>
+                    <button id="createNewQuizBtn" onclick="visitNewQuiz()" type="button" class="btn btn-success">Create</button>
                 </div>
             </div>
         </div>
