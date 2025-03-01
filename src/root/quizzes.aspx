@@ -16,22 +16,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex flex-column">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="quizNameInput">Name:</span>
-                            <input type="text" class="form-control" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
+                    <div class="d-flex flex-column justify-content-center align-content-center">
+                        <div class="input-group mb-3 d-flex flex-row">
+                            <span class="input-group-text" id="quizNameInput" style="width: 170px">Name:</span>
+                            <input type="text" class="form-control" style="max-width: 400px" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="shortNameInput">Short Name:</span>
-                            <input type="text" class="form-control" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput">
+                            <span class="input-group-text" id="shortNameInput" style="width: 170px">Short Name:</span>
+                            <input type="text" class="form-control flex-grow-1" style="max-width: 400px" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="pointsInput">Points per Question:</span>
-                            <input type="text" class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
+                            <span class="input-group-text" id="pointsInput" style="width: 170px">Points per Question:</span>
+                            <input type="text" style="max-width: 400px"  class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
                         </div>
-                        <div class="mb-3">
-                            <label>Randomize</label>
-                            <input class="form-check-input" type="checkbox" value="">
+                        <div class="input-group mb-3 d-flex flex-row justify-content-center">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                            </div>
+                            <span class="input-group-text" style="max-width:400px">Randomize</span>
                         </div>
                     </div>
                 </div>
@@ -46,26 +48,28 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="editQuizLabel">New Quiz</h1>
+                    <h1 class="modal-title fs-5" id="editQuizLabel">Edit Quiz</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column justify-content-center align-content-center">
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="editQuizNameInput">Name:</span>
-                            <input type="text" class="form-control" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
+                            <span class="input-group-text" id="editQuizNameInput" style="width: 170px">Name:</span>
+                            <input type="text" class="form-control" placeholder="Quiz Name" style="max-width: 400px" aria-label="quizName" aria-describedby="quizNameInput">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="editShortNameInput">Short Name:</span>
-                            <input type="text" class="form-control" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput">
+                            <span class="input-group-text" id="editShortNameInput" style="width: 170px">Short Name:</span>
+                            <input type="text" class="form-control" placeholder="Short Name" style="max-width: 400px" aria-label="shortName" aria-describedby="shortNameInput">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="editPointsInput">Points per Question:</span>
-                            <input type="text" class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
+                            <span class="input-group-text" id="editPointsInput" style="width: 170px">Points per Question:</span>
+                            <input type="text" class="form-control" placeholder="#" style="max-width: 400px" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
                         </div>
-                        <div class="mb-3">
-                            <label>Randomize</label>
-                            <input class="form-check-input" type="checkbox" value="">
+                        <div class="input-group mb-3 d-flex flex-row justify-content-center">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                            </div>
+                            <span class="input-group-text" style="max-width: 400px">Randomize</span>
                         </div>
                     </div>
                 </div>
@@ -87,13 +91,7 @@
             </tr>
         </thead>
         <tbody id="quizTableBody" class="table-hover table-group-divider">
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td><input class="form-check-input" type="checkbox" value=""></td>
-                <td>lorem</td>
-                <td><button type="button" class="btn btn-primary">Questions</button></td>
-            </tr>
+            <!--placeholder row-->
             <tr>
                 <td>lorem</td>
                 <td>lorem</td>
