@@ -14,8 +14,10 @@ function visitNewQuiz() {
     var quizName = document.getElementById("quizNameInput").value;
     if (quizId == '' || quizName == '') {
         if (quizId == '') {
-            document.getElementById("invalidID").innerHTML = 'You must enter a value in the Short Name field.';
+            document.getElementById("invalidIdDiv").classList.remove('visually-hidden');
+            document.getElementById("invalidId").innerHTML = 'You must enter a value in the Short Name field.';
         } if (quizName == '') {
+            document.getElementById("invalidNameDiv").classList.remove('visually-hidden');
             document.getElementById("invalidName").innerHTML = 'You must enter a value in the Name field.';
         }
     } else {
@@ -24,13 +26,15 @@ function visitNewQuiz() {
 };
 
 //Clear modal inputs on close
-$('#newQuiz, #editQuiz').on('hidden.bs.modal', function (e) {
-    $(this)
-        .find("input,textarea,select,label")
-        .val('')
-        .text('')
-        .end()
-        .find("input[type=checkbox], input[type=radio]")
-        .prop("checked", "")
-        .end();
+$(document).ready(function () {
+    $('#newQuiz, #editQuiz').on('hidden.bs.modal', function (e) {
+        $(this)
+            .find("input,textarea,select,label")
+            .val('')
+            .text('')
+            .end()
+            .find("input[type=checkbox], input[type=radio]")
+            .prop("checked", "")
+            .end();
+    });
 });

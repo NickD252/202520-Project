@@ -35,10 +35,10 @@
                             </div>
                             <span class="input-group-text" style="max-width:400px">Randomize</span>
                         </div>
-                        <div class="d-flex flex-row justify-content-center">
-                            <label id="invalidID"></label>
+                        <div id="invalidIdDiv" class="d-flex flex-row justify-content-center text-danger visually-hidden">
+                            <label id="invalidId"></label>
                         </div>
-                        <div class="d-flex flex-row justify-content-center">
+                        <div id="invalidNameDiv"class="d-flex flex-row justify-content-center text-danger visually-hidden">
                             <label id="invalidName"></label>
                         </div>
                     </div>
