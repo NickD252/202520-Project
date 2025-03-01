@@ -42,6 +42,40 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="editQuiz" tabindex="-1" aria-labelledby="editQuizLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editQuizLabel">New Quiz</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="editQuizNameInput">Name:</span>
+                            <input type="text" class="form-control" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="editShortNameInput">Short Name:</span>
+                            <input type="text" class="form-control" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="editPointsInput">Points per Question:</span>
+                            <input type="text" class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
+                        </div>
+                        <div class="mb-3">
+                            <label>Randomize</label>
+                            <input class="form-check-input" type="checkbox" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="updateQuizBtn" type="button" class="btn btn-success">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <table id="quizManagementTable" class="table table-hover table-bordered">
         <thead class="table-light">
             <tr>
@@ -52,7 +86,7 @@
                 <th>&nbsp;Actions</th>
             </tr>
         </thead>
-        <tbody class="table-hover table-group-divider">
+        <tbody id="quizTableBody" class="table-hover table-group-divider">
             <tr>
                 <td>lorem</td>
                 <td>lorem</td>
@@ -70,4 +104,5 @@
         </tbody>
     </table>
     <script defer src="Content/bootstrap.css"></script>
+    <script defer src="Scripts/quizManagement.js"></script>
 </asp:Content>
