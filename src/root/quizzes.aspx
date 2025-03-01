@@ -23,7 +23,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Short Name:</span>
-                            <input id="shortNameInput" type="text" class="form-control flex-grow-1" style="max-width: 400px" maxlength="25" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput" readonly>
+                            <input id="shortNameInput" type="text" class="form-control flex-grow-1" style="max-width: 400px" maxlength="25" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Points per Question:</span>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id="createNewQuizBtn" type="button" class="btn btn-success">Create</button>
+                    <button id="createNewQuizBtn" onclick="createQuiz()" type="button" class="btn btn-success">Create</button>
                 </div>
             </div>
         </div>
