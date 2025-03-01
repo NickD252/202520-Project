@@ -18,20 +18,20 @@
                 <div class="modal-body">
                     <div class="d-flex flex-column justify-content-center align-content-center">
                         <div class="input-group mb-3 d-flex flex-row">
-                            <span class="input-group-text" id="quizNameInput" style="width: 170px">Name:</span>
-                            <input type="text" class="form-control" style="max-width: 400px" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
+                            <span class="input-group-text" style="width: 170px">Name:</span>
+                            <input id="quizNameInput" type="text" class="form-control" style="max-width: 400px" maxlength="255" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="shortNameInput" style="width: 170px">Short Name:</span>
-                            <input type="text" class="form-control flex-grow-1" style="max-width: 400px" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput">
+                            <span class="input-group-text" style="width: 170px">Short Name:</span>
+                            <input id="shortNameInput" type="text" class="form-control flex-grow-1" style="max-width: 400px" maxlength="25" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput" readonly>
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="pointsInput" style="width: 170px">Points per Question:</span>
-                            <input type="text" style="max-width: 400px"  class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
+                            <span class="input-group-text" style="width: 170px">Points per Question:</span>
+                            <input id="pointsInput" type="text" style="max-width: 400px"  class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
                         </div>
                         <div class="input-group mb-3 d-flex flex-row justify-content-center">
                             <div class="input-group-text">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                <input id="newQuizRandomCheck" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
                             </div>
                             <span class="input-group-text" style="max-width:400px">Randomize</span>
                         </div>
@@ -54,20 +54,20 @@
                 <div class="modal-body">
                     <div class="d-flex flex-column justify-content-center align-content-center">
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="editQuizNameInput" style="width: 170px">Name:</span>
-                            <input type="text" class="form-control" placeholder="Quiz Name" style="max-width: 400px" aria-label="quizName" aria-describedby="quizNameInput">
+                            <span class="input-group-text" style="width: 170px">Name:</span>
+                            <input id="editQuizNameInput" type="text" class="form-control" placeholder="Quiz Name" maxlength="255" style="max-width: 400px" aria-label="quizName" aria-describedby="quizNameInput">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="editShortNameInput" style="width: 170px">Short Name:</span>
-                            <input type="text" class="form-control" placeholder="Short Name" style="max-width: 400px" aria-label="shortName" aria-describedby="shortNameInput">
+                            <span class="input-group-text" style="width: 170px">Short Name:</span>
+                            <input id="editShortNameInput" type="text" class="form-control" placeholder="Short Name" maxlength="25" style="max-width: 400px" aria-label="shortName" aria-describedby="shortNameInput" readonly>
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="editPointsInput" style="width: 170px">Points per Question:</span>
-                            <input type="text" class="form-control" placeholder="#" style="max-width: 400px" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
+                            <span class="input-group-text" style="width: 170px">Points per Question:</span>
+                            <input id="editPointsInput" type="text" class="form-control" placeholder="#" style="max-width: 400px" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
                         </div>
                         <div class="input-group mb-3 d-flex flex-row justify-content-center">
                             <div class="input-group-text">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                <input id="editQuizRandomCheck" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
                             </div>
                             <span class="input-group-text" style="max-width: 400px">Randomize</span>
                         </div>
@@ -80,14 +80,14 @@
             </div>
         </div>
     </div>
-    <table id="quizManagementTable" class="table table-hover table-bordered">
+    <table id="quizManagementTable" class="table table-hover table-bordered table-striped">
         <thead class="table-light">
             <tr>
-                <th>&nbsp;Name</th>
-                <th>&nbsp;Short</th>
-                <th>&nbsp;Random</th>
-                <th>&nbsp;PPQ</th>
-                <th>&nbsp;Actions</th>
+                <th width="30%">&nbsp;Name</th>
+                <th width="10%">&nbsp;Short</th>
+                <th width="10%">&nbsp;Random</th>
+                <th width="10%">&nbsp;PPQ</th>
+                <th width="10%">&nbsp;Actions</th>
             </tr>
         </thead>
         <tbody id="quizTableBody" class="table-hover table-group-divider">
