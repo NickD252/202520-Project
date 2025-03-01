@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="quizzes.aspx.cs" Inherits="coding_lms.quizzes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+
+    <!--header and 'new' button-->
     <div class="d-flex mb-3">
         <div class="me-auto p-2">
             <h1>Quizzes</h1>
@@ -8,6 +11,10 @@
             <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#newQuiz">New</button>
         </div>
     </div>
+    <!--########################-->
+
+
+    <!--Create New Quiz modal-->
     <div class="modal fade" id="newQuiz" tabindex="-1" aria-labelledby="newQuizLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -50,6 +57,9 @@
             </div>
         </div>
     </div>
+    <!--#####################-->
+
+    <!--Edit quiz modal-->
     <div class="modal fade" id="editQuiz" tabindex="-1" aria-labelledby="editQuizLabel" aria-hidden="false">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -86,6 +96,9 @@
             </div>
         </div>
     </div>
+    <!--#####################-->
+
+    <!-------Table---------->
     <table id="quizManagementTable" class="table table-hover table-bordered table-striped">
         <thead class="table-light">
             <tr>
@@ -97,6 +110,7 @@
             </tr>
         </thead>
         <tbody id="quizTableBody" class="table-hover table-group-divider">
+
             <!--placeholder row-->
             <tr>
                 <td>lorem</td>
@@ -105,8 +119,15 @@
                 <td>lorem</td>
                 <td><button type="button" class="btn btn-primary">Questions</button></td>
             </tr>
+            <!--##############-->
+
         </tbody>
     </table>
+    <!--######################-->
+
+    <!--CSS and JS script references-->
     <script defer src="Content/bootstrap.css"></script>
     <script defer src="Scripts/quizManagement.js"></script>
+    <!--##################-->
+
 </asp:Content>

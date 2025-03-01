@@ -1,4 +1,5 @@
 ﻿//Add doubleclick functionality to row to call modal
+//##################################################
 $(document).ready(function () {
     $('#quizTableBody > tr').on('dblclick', function () {
         $('#editQuiz').modal('show');
@@ -7,6 +8,7 @@ $(document).ready(function () {
 
 
 //Direct 'Create quiz' modal to new quiz
+//######################################
 document.getElementById("createNewQuizBtn").addEventListener("click", visitNewQuiz);
 
 function visitNewQuiz() {
@@ -25,7 +27,9 @@ function visitNewQuiz() {
     }
 };
 
+
 //Clear modal inputs on close
+//###########################
 $(document).ready(function () {
     $('#newQuiz, #editQuiz').on('hidden.bs.modal', function (e) {
         $(this)
