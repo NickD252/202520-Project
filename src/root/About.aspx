@@ -2,8 +2,45 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
-        <h3>Your application description page.</h3>
-        <p>Use this area to provide additional information.</p>
+
+        <style>
+
+            table, th, td{
+
+                border: 1px solid black;
+                text-align: center;
+
+            }
+
+            table{
+
+                width: 25%;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            h1{
+
+                text-align: center;
+
+            }
+
+        </style>
+
+        <h1>Student</h1>
+
+        <table>
+
+            <tr>
+
+                <th>Last</th>
+                <th>First</th>
+                <th>Email</th>
+
+            </tr>
+
+        </table>
+
     </main>
 </asp:Content>
