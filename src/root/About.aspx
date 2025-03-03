@@ -5,6 +5,19 @@
 
         <style>
 
+            tr:hover{
+
+                background-color: grey;
+
+            }
+
+            td a{
+
+                display: block;
+                border-color: transparent;
+
+            }
+
             table, th, td{
 
                 border: 1px solid black;
@@ -39,6 +52,40 @@
                 <th>Email</th>
 
             </tr>
+
+            <tr>
+
+                <td><a href="#">Text</a></td>
+                <td><a href="#">Text</a></td>
+                <td><a href="#">identifier@domain.tld</a></td>
+
+            </tr>
+
+            <tr>
+
+                <td><a href="#">Text</a></td>
+                <td><a href="#">Text</a></td>
+                <td><a href="#">identifier@domain.tld</a></td>
+
+            </tr>
+
+            <tr>
+
+                <td><a href="#">Text</a></td>
+                <td><a href="#">Text</a></td>
+                <td><a href="#">identifier@domain.tld</a></td>
+
+            </tr>
+
+            <tr>
+
+                <td><a href="#">Text</a></td>
+                <td><a href="#">Text</a></td>
+                <td><a href="#">identifier@domain.tld</a></td>
+
+            </tr>
+
+
 
         </table>
 
