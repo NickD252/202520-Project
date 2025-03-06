@@ -38,7 +38,7 @@ function visitNewQuiz() {
 //Clear modal inputs on close
 //###########################
 $(document).ready(function () {
-    $("#newQuiz, #editQuiz").on("hidden.bs.modal", function (e) {
+    $("#newQuiz, #editQuiz").on("hidden.bs.modal", function () {
         $(this)
             .find("input,textarea,select,label")
             .val("")
