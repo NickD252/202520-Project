@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial scale=1.0" /> <!--Initialize viewport and scalers for the web form-->
     <!--Give title for web form-->
     <title>Enrollment View</title> <!--Title given to web form-->
-     <!--Add link in script src to allow use of jquery-->
     <!--Use CSS styling to create borders for table, data cells, and header and apply hover to data rows-->
     <style>
         table, td, th {
@@ -23,7 +22,8 @@
 <body>
          <label style=" font-size:50px">Enrollment</label> <!--Create a label and increase font size so that enrollment can be seen as the main view-->
  <!--Create table to hold data in cells of columns and rows-->
- <table id="enrollmentTable" height="150" text-align="center"> <!--Customize the table's height and apply text align-->
+ <table height="150" text-align="center"> <!--Customize the table's height and apply text align-->
+     <thead> <!--Create table head-->
      <tr bgcolor="gray"> <!--Apply gray as the background color of the header row-->
          <th style="text-align:center" height="10" width="200">Term</th> <!--Create Term header and apply height, width, and center alignment-->
          <th style="text-align:center" height="10" width="200">Course</th> <!--Create Course header and apply height, width, and center alignment-->
@@ -31,6 +31,8 @@
          <th style="text-align:center" height="10" width="200">CRN</th> <!--Create CRN header and apply height, width, and center alignment-->
          <th style="text-align:center" height="10" width="200">Students</th> <!--Create Students header and apply height, width, and center alignment-->
      </tr>
+     </thead>
+     <tbody id="enrollmentTable"> <!--Create tbody id and tbody-->
      <tr bgcolor="white"> <!--Apply white as the background color of the first row of data-->
          <td align="center">202520</td> <!--Create first data cell of row 2 and apply center alignment to data-->
          <td align="center">CIS-150</td> <!--Create second data cell of row 2 and apply center alignment to data-->
@@ -59,9 +61,13 @@
          <td align="center">24567</td> <!--Create fourth data cell of row 5 and apply center alignment to data-->
          <td align="center">##</td> <!--Create fifth data cell of row 5 and apply center alignment to data-->
      </tr>
+     </tbody>
 
  </table>
 
     </body>
+    <!--Apply script src to js file-->
+    <script defer src="Scripts/EnrollmentView.js">
 
+    </script>
 </asp:Content>
