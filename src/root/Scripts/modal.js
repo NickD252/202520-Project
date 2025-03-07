@@ -15,9 +15,7 @@ function saveQuestion() {
     var type = document.getElementById("type").value;
     var options = document.getElementById("options").value;
 
-    // Perform any necessary validation here
-
-    // Send data to the server using AJAX, or you could post the form directly
+    // Send data to the server
     console.log("Saving Question...");
     console.log("Title: " + title);
     console.log("Body: " + body);
@@ -27,5 +25,5 @@ function saveQuestion() {
     // Close the modal after saving
     closeModal();
 
-    // Optionally, you can add an AJAX request to submit this data to the server
+    
 }
