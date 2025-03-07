@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-         <label style=" font-size:50px">Enrollment</label> <!--Create a label and increase font size so that enrollment can be seen as the main view-->
+ <label style=" font-size:50px">Enrollment</label> <!--Create a label and increase font size so that enrollment can be seen as the main view-->
  <!--Create table to hold data in cells of columns and rows-->
  <table height="150" text-align="center"> <!--Customize the table's height and apply text align-->
      <thead> <!--Create table head-->
