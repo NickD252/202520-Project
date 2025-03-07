@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Section View" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SectionView.aspx.cs" Inherits="coding_lms.SectionView" %>
+﻿<%@ Page Title="Section View" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="sections.aspx.cs" Inherits="coding_lms.SectionView" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -25,7 +25,7 @@
                    <th width="10%">&nbsp;Students</th>
                   </tr>
                  </thead>
-        <tbody>
+        <tbody id="sectionsTable">
           <!--PlaceHolder Data-->
             <tr id="tablehead">
                 <td>loremmmmmmmmmmmmmm</td>
@@ -64,9 +64,7 @@
    </main>
  <!-------------------------->
 
-  <!--Scripts-->
-   <script defer src="Content/bootstrap.css"></script>
-  <!----------->
+ 
     <!--CSS Styling-->
     <header>
       <style>
@@ -83,6 +81,10 @@
           }
       </style>
     </header>
+<!--------------->
+     <!--Scripts-->
+   <script defer src="Content/bootstrap.css"></script>
+   <script defer src="Scripts/sectionsview.js"></script>
+  <!----------->
     
-    <!--------------->
 </asp:Content>
