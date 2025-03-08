@@ -3,14 +3,13 @@
 
 
     <!--header and 'new' button-->
-    <div class="d-flex mb-3">
-        <div class="me-auto p-2">
-            <h1>Quizzes</h1>
-        </div>
-        <div class="p-2">
-            <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#newQuiz">New</button>
-        </div>
-    </div>
+    <div class="d-flex align-items-center justify-content-between mb-3">
+    <h1 class="mb-0">Quizzes</h1>
+    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#newQuiz">
+        New
+    </button>
+</div>
+
     <!--########################-->
 
 
