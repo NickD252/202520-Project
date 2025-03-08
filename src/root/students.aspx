@@ -7,7 +7,7 @@
         <script defer src="Content/bootstrap.css"></script>
 
      <style>
-
+         /* lines 10-43: default page table design */
          tr:hover{
 
              background-color: grey;
@@ -43,11 +43,11 @@
          }
 
      </style>
-
+        
      <h1>Student</h1>
-
+         <!-- lines 49-171: student dialog box design -->
          <div class="modal" id="editStdnt">
-
+             
              <div class="modal-dialog modal-dialog-centered">
                  <div class="modal-content">
                      <div class="modal-body">
@@ -56,14 +56,14 @@
                              <div class="d-flex flex-column justify-content-start">
 
                                  <h3 class="d-flex flex-row justify-content-start">Name</h3>
-
+                                 <!-- Last Name input -->
                                  <div class="input-group mb-3">
 
                                      <span class="input-group-text" id="lastNameInput">Last:</span>
                                      <input type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="lastNameInput" />
 
                                  </div>
-
+                                 <!-- First Name input -->
                                  <div class="input-group mb-3">
 
                                      <span class="input-group-text" id="firstNameInput">First:</span>
@@ -71,17 +71,17 @@
 
                                  </div>
 
-                                 <hr></hr>
+                                 <hr/>
 
                                  <h3>Group</h3>
-
+                                 <!-- Record # input -->
                                  <div class="input-group mb-3">
 
                                      <span class="input-group-text" id="recordNumInput">Record #:</span>
                                      <input type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="recordNumInput" />
 
                                  </div>
-
+                                 <!-- Email input -->
                                  <div class="input-group mb-3">
 
                                      <span class="input-group-text" id="emailInput">Email:</span>
@@ -91,7 +91,7 @@
 
 
                              </div>
-
+                             <!-- lines 95-158 Grade Dialog Entries (right hand side of the dialog box) -->
                              <div class="d-flex flex-column justify-content-evenly">
 
                                  <div class="d-flex flex-column justify-content-evenly">
@@ -158,19 +158,27 @@
                              </div>
 
                          </div>
+
                          <div class="d-flex flex-column justify-content-center align-content-center">
+
                          </div>
+
                      </div>
+                     <!-- dialog footer with cancel and create buttons -->
                      <div class="modal-footer d-flex flex-row justify-content-between">
+
                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                          <button id="createBtn" type="button" class="btn btn-success">Create</button>
+
                      </div>
+
                  </div>
+
              </div>
 
          </div>
 
-
+         <!-- default page table -->
      <table class="table">
 
          <thead>
