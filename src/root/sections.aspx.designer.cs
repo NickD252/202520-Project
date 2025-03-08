@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace quiz
+namespace coding_lms
 {
 
 
-    public partial class SiteMaster
+    public partial class SectionView
     {
     }
 }
