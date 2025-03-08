@@ -1,5 +1,6 @@
 ﻿body {
-    font-family: "Lato", sans-serif;
+    font-family: Lexend;
+    font-weight: 500;
 }
 
 #profileSubMenu {
@@ -33,7 +34,7 @@
     background-color: #212529;
     overflow-x: hidden;
     transition: 0.7s;
-    padding-top: 60px;
+    padding-top: 75px;
 }
 
     .sidenav a {
@@ -56,7 +57,7 @@
         position: absolute;
         top: 0;
         right: 25px;
-        font-size: 36px;
+        font-size: 40px;
         margin-left: 50px;
     }
 

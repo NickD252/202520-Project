@@ -40,7 +40,7 @@
                                 <li><a runat="server" class="nav-link" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" class="nav-link" href="~/Account/Login">Log in</a></li>
                                 <!--Menu placeholder link button-->
-                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="offcanvasExample" onclick="openNav()">Menu
+                                <a id="menuBtn" class="btn btn-primary" role="button">Menu
                                 </a>
                                 <!---------------------->
                             </ul>
@@ -60,13 +60,13 @@
             </div>
         </nav>
         <!---Profile Menu elements--->
-        <div id="profileMenuNav" class="sidenav" style="justify-self:right">
+        <div id="profileMenuNav" class="sidenav">
             <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" onclick="displayTerms()">Terms</a>
-            <a href="#" onclick="closeAllMenus()">Quizzes</a>
-            <a href="#" onclick="closeAllMenus()">Calendar</a>
+            <a id="menuTerms" href="#" onclick="displayTerms()">Terms</a>
+            <a id="menuQuizzes" href="#" onclick="closeAllMenus()">Quizzes</a>
+            <a id="menuCalendar" href="#" onclick="closeAllMenus()">Calendar</a>
         </div>
-        <div id="profileSubMenu" class="sidenav" style="justify-self:right">
+        <div id="profileSubMenu" class="sidenav">
             <a href="#" onclick="closeAllMenus()">Spring 2025 (202520)</a>
             <a href="#" onclick="closeAllMenus()">Fall 2025 (202510)</a>
             <a href="#" onclick="closeAllMenus()">Summer 2024 (202430)</a>
