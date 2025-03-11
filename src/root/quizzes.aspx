@@ -116,7 +116,7 @@
                 <td>lorem</td>
                 <td><input class="form-check-input" type="checkbox" value=""></td>
                 <td>lorem</td>
-                <td><button type="button" class="btn btn-primary">Questions</button></td>
+                <td><button type="button" class="btn btn-primary" onclick="goToQuestions()">Questions</button></td>
             </tr>
             <!--##############-->
             
@@ -127,6 +127,11 @@
     <!--CSS and JS script references-->
     <script defer src="Content/bootstrap.css"></script>
     <script defer src="Scripts/quizManagement.js"></script>
+    <script>
+        function goToQuestions() {
+            window.location.href = 'questions.aspx';
+        }
+    </script>
     <!--##################-->
 
 </asp:Content>
