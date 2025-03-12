@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="coding_lms.SiteMaster" %>
 
 <!DOCTYPE html>
-<a href="src\root\scripts\"></a>
+
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="Content/profileMenuStyles.css" />
 
 </head>
-<body">
+<body>
     <form runat="server">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">
