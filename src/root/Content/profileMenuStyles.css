@@ -1,6 +1,7 @@
 ﻿body {
     font-family: Lexend;
     font-weight: 500;
+    z-index: -1;
 }
 
 #profileSubMenu {
@@ -8,20 +9,18 @@
     z-index: 1;
     top: 4.5rem;
     right: 0;
-    background-color: #212529;
+    background-color: #2D3238 !important;
     overflow-x: hidden;
     width: 0;
     position: fixed;
-    transition: none;
     padding-top: 0;
 }
 
-#profileMenuNav {
-    transition: 0.7s;
-}
 
 #close {
     border: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .sidenav {
@@ -31,10 +30,11 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #212529;
+    background-color: #2D3238 !important;
     overflow-x: hidden;
-    transition: 0.7s;
+    transition: 0.3s;
     padding-top: 75px;
+    margin-top: 3.5rem;
 }
 
     .sidenav a {
@@ -43,13 +43,13 @@
         font-size: 25px;
         color: #c1c1c1;
         display: block;
-        transition: 0.7s;
+        transition: 0.3s;
         font-size: 1.3rem;
     }
 
         .sidenav a:hover {
             color: #f1f1f1;
-            transition: 0.2s;
+            transition: 0.3s;
             border-left: solid 5px #00d600;
         }
 
