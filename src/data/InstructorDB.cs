@@ -5,7 +5,8 @@ using System.Linq;
 
 namespace coding_lms.data {
 	public class InstructorDB : RootDBContext {
-		public InstructorDB() { }
+		public InstructorDB() {
+		}
 
 		/// <summary>
 		/// Returns all Attempts currently available
@@ -272,6 +273,7 @@ namespace coding_lms.data {
 			}
 		}
 #endif
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -291,6 +293,9 @@ namespace coding_lms.data {
 			return ret;
 #else
 			return null;
+#endif
+		}
+
 #endif
 		}
 	}
