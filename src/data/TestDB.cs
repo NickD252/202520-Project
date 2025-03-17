@@ -258,7 +258,9 @@ namespace coding_lms.data {
 #else
 			// Open DBContext
 
-			// 
+			// Call SProc for Attempt Results
+
+			// return the Collection of AttemptPool objects
 			return null;
 #endif
 		}
