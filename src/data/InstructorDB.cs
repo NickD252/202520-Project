@@ -354,6 +354,20 @@ namespace coding_lms.data {
 		};
 
 #endif
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="section"></param>
+		/// <returns></returns>
+		public IEnumerable<StudentView> GetStudentsView(string section) {
+#if DEBUG
+			return this._students;
+#else
+			return null;
+#endif
+		}
+
 #endif
 		}
 	}
