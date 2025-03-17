@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace coding_lms.data {
-	public class Question {
+	public class Question : QuestionView {
 		public Question(Guid id) : this() { }
 		public Question(long id) : this() { }
 		private Question() {
@@ -15,10 +15,6 @@ namespace coding_lms.data {
 			set { _type = value; }
 		}
 
-		private string _body;
-		public string Body {
-			get { return _body; }
-			set { _body = value; }
 		}
 
 		private bool _random;
