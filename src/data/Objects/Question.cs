@@ -32,7 +32,10 @@ namespace coding_lms.data {
 		}
 
 		private IEnumerable<Answer> _answ;
-		public IEnumerable<Answer> Answers { get; set; }
+		public IEnumerable<Answer> Answers {
+			get { return this._answ; }
+			set { this._answ = value; }
+		}
 
 		/// <summary>
 		/// Cleanup Deconstructor
