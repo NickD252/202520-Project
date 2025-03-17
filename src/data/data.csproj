@@ -84,20 +84,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\QuestionView.cs" />
+    <Compile Include="Views\QuizView.cs" />
+    <Compile Include="Views\EnrollmentView.cs" />
     <Compile Include="Objects\Answer.cs" />
     <Compile Include="Objects\Attempt.cs" />
     <Compile Include="InstructorDB.cs" />
     <Compile Include="Objects\AttemptPool.cs" />
     <Compile Include="Objects\Course.cs" />
     <Compile Include="Objects\Enums.cs" />
-    <Compile Include="Objects\QuizPool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Objects\Question.cs" />
     <Compile Include="Objects\Quiz.cs" />
     <Compile Include="Objects\ResultPool.cs" />
-    <Compile Include="RootDBContext.cs" />
+    <Compile Include="Objects\QuizPool.cs" />
     <Compile Include="Objects\Student.cs" />
+    <Compile Include="RootDBContext.cs" />
+    <Compile Include="Views\SectionView.cs" />
+    <Compile Include="Views\StudentView.cs" />
     <Compile Include="SystemDB.cs" />
+    <Compile Include="Objects\Term.cs" />
     <Compile Include="TestDB.cs" />
   </ItemGroup>
   <ItemGroup>
