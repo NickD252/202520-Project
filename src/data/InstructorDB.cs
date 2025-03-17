@@ -272,5 +272,26 @@ namespace coding_lms.data {
 			}
 		}
 #endif
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="id">int (Int32) value; Term.ID field value</param>
+		/// <returns></returns>
+		public IEnumerable<SectionView> GetSectionsView(int? id = null) {
+#if DEBUG
+			var ret = new List<SectionView>();
+
+			if ( id.HasValue ) {
+				ret = this._sections.Where(sv => sv.Term == id.Value).ToList();
+			}
+			else {
+				ret = this._sections.ToList();
+			}
+
+			return ret;
+#else
+			return null;
+#endif
+		}
 	}
 }
