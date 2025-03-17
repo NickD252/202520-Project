@@ -342,6 +342,18 @@ namespace coding_lms.data {
 #endif
 		}
 
+#if DEBUG
+		public IEnumerable<Student> _students = new List<Student>() {
+			new Student {UUID = Guid.NewGuid(), SRN="A123456789", LastName = "Doe", FirstName = "John", Email = "john.doe@school.edu"}
+			,new Student {UUID = Guid.NewGuid(), SRN="A234567891", LastName = "Doe", FirstName = "Jane", Email = "jane.doe@school.edu"}
+			,new Student {UUID = Guid.NewGuid(), SRN="A345678912", LastName = "Davis", FirstName = "Jack", Email = "jackdavis1234@school.edu"}
+			,new Student {UUID = Guid.NewGuid(), SRN="A456789123", LastName = "Davis", FirstName = "Jaqueline", Email = "jaqdavis0345@school.edu"}
+			,new Student {UUID = Guid.NewGuid(), SRN = "A567891234", LastName = "Smith", FirstName = "John", Email = "josmith@school.edu"}
+			,new Student {UUID = Guid.NewGuid(), SRN = "A678912345", LastName = "Smith", FirstName = "Jane", Email = "jasmith@school.edu"}
+			,new Student {UUID = Guid.NewGuid(), SRN = "A789123456", LastName = "Smith", FirstName = "Mark", Email = "mark.smith@school.edu"}
+		};
+
+#endif
 #endif
 		}
 	}
