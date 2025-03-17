@@ -368,6 +368,16 @@ namespace coding_lms.data {
 #endif
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="uuid"></param>
+		/// <returns></returns>
+		public Student GetStudent(Guid uuid) {
+#if DEBUG
+			return this._students.FirstOrDefault((student) => student.UUID == uuid);
+#else
+			return null;
 #endif
 		}
 	}
