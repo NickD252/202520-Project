@@ -270,10 +270,14 @@ namespace coding_lms.data {
 		/// <param name="student">String value; The Student's SRN value</param>
 		/// <returns></returns>
 		public Attempt GetAttempt(string quiz, string student) {
+#if DEBUG
+			return null;
+#else
 			return this.ExecuteSProc<Attempt>("dbo.ap_Quiz_Get @quizid=@qid, @studentid=@sid",
 				new SqlParameter("@qid", quiz)
 				, new SqlParameter("@sid", student)
 					).Single();
+#endif
 		}
 
 		/// <summary>
@@ -282,9 +286,13 @@ namespace coding_lms.data {
 		/// <param name="quiz">GUID type; the Quiz UID value</param>
 		/// <returns></returns>
 		public IEnumerable<Question> GetQuestions(string course = null) {
+#if DEBUG
+			return null;
+#else
 			return this.ExecuteSProc<Question>("dbo.ap_Question_Get @CourseID=@cid"
 				, new SqlParameter("@cid", course ?? ( object )DBNull.Value)
 			);
+#endif
 		}
 
 
