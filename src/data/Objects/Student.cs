@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace coding_lms.data {
-		public Student(string srn) {
 	public class Student : StudentView {
 		public Student() {
 			Init ();
 		}
+		public Student(string srn) : this() {
 			this._srn = srn;
 		}
 
