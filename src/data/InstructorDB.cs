@@ -197,9 +197,9 @@ namespace coding_lms.data {
 			};
 #endif
 		/// <summary>
-		/// Returns all the Questions for a given Quiz
+		/// 
 		/// </summary>
-		/// <param name="quiz">Guid value</param>
+		/// <param name="id">Long value; Represents the Quiz ID</param>
 		/// <returns></returns>
 		public IEnumerable<Question> GetQuestionsView(long id) {
 #if DEBUG
