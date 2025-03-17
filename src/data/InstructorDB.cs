@@ -323,6 +323,25 @@ namespace coding_lms.data {
 		}
 #endif
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="id"></param>
+		/// <returns></returns>
+		public IEnumerable<EnrollmentView> GetEnrollmentViews(string id = null) {
+#if DEBUG
+			var ret = this._enrollments.ToList();
+
+			if ( String.IsNullOrEmpty(id) ) {
+				ret = this._enrollments.Where(ev => ev.ID == id).ToList();
+			}
+
+			return ret;
+#else
+			return null;
+#endif
+		}
+
 #endif
 		}
 	}
