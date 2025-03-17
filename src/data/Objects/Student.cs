@@ -3,6 +3,9 @@
 namespace coding_lms.data {
 		public Student(string srn) {
 	public class Student : StudentView {
+		public Student() {
+			Init ();
+		}
 			this._srn = srn;
 		}
 
