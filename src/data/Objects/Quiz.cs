@@ -7,7 +7,7 @@
 			this._crn = crn;
 			this.Name = name;
 		}
-		private Quiz() {
+		public Quiz() {
 			this.Init();
 		}
 
