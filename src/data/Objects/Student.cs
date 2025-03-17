@@ -1,8 +1,8 @@
 ﻿using System;
 
 namespace coding_lms.data {
-	public class Student {
 		public Student(string srn) {
+	public class Student : StudentView {
 			this._srn = srn;
 		}
 
@@ -19,18 +19,7 @@ namespace coding_lms.data {
 			set { _id = value; }
 		}
 
-		private Guid _uuid;
-		public Guid UUID {
-			get { return _uuid; }
-			set { _uuid = value; }
-		}
 
-		private string _email;
-
-		public string Email {
-			get { return _email; }
-			set { _email = value; }
-		}
 
 		private string _srn;
 
@@ -39,22 +28,10 @@ namespace coding_lms.data {
 			set { _srn = value; }
 		}
 
-		private String _fname;
-
-		public String FirstName {
-			get { return _fname; }
-			set { _fname = value; }
-		}
-
-		private string _lname;
-
-		public string LastName {
-			get { return _lname; }
-			set { _lname = value; }
-		}
-
 		public string FullName {
-			get { return $"{this._lname}, {this._fname}"; }
+			get { return $"{this.LastName}, {this.FirstName}"; }
 		}
+
+
 	}
 }
