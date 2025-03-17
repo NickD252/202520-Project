@@ -213,7 +213,13 @@ namespace coding_lms.data {
 		/// </summary>
 		/// <param name="id">Int64/long value</param>
 		/// <returns></returns>
-		public Question GetQuestion(Int64 id) { return null; }
+		public Question GetQuestion(Int64 id) {
+#if DEBUG
+			return this._quests.FirstOrDefault(q => q.ID == id);
+#else
+			return null;
+#endif
+		}
 
 		/// <summary>
 		/// 
