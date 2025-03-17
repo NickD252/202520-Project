@@ -13,6 +13,14 @@ namespace coding_lms.data {
 		public QuestionEnum Type {
 			get { return _type; }
 			set { _type = value; }
+		private long _id;
+		public long ID {
+			get {
+				return _id;
+			}
+			set {
+				_id = value;
+			}
 		}
 
 		}
