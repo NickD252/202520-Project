@@ -200,8 +200,12 @@ namespace coding_lms.data {
 		/// </summary>
 		/// <param name="quiz">Guid value</param>
 		/// <returns></returns>
-		public IEnumerable<Question> GetQuestions(Guid quiz) {
+		public IEnumerable<Question> GetQuestionsView(long id) {
+#if DEBUG
+			return this._quests;
+#else
 			return null;
+#endif
 		}
 
 		/// <summary>
