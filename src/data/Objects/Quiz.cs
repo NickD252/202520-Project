@@ -1,5 +1,3 @@
-﻿using System;
-
 ﻿namespace coding_lms.data {
 	public class Quiz : QuizView {
 		public Quiz(int term, string crn, string name) : this() {

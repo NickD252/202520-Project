@@ -9,10 +9,6 @@ namespace coding_lms.data {
 			this._answ = new List<Answer>();
 		}
 
-		private QuestionEnum _type;
-		public QuestionEnum Type {
-			get { return _type; }
-			set { _type = value; }
 		private long _id;
 		public long ID {
 			get {
@@ -23,12 +19,24 @@ namespace coding_lms.data {
 			}
 		}
 
+		private QuestionEnum _type;
+		public QuestionEnum Type {
+			get {
+				return _type;
+			}
+			set {
+				_type = value;
+			}
 		}
 
 		private bool _random;
 		public bool IsRandom {
-			get { return _random; }
-			set { _random = value; }
+			get {
+				return _random;
+			}
+			set {
+				_random = value;
+			}
 		}
 
 		private IEnumerable<Answer> _answ;
