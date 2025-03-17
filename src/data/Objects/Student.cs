@@ -16,16 +16,7 @@ namespace coding_lms.data {
 
 		}
 
-		private long _id;
-		public long ID {
-			get { return _id; }
-			set { _id = value; }
-		}
-
-
-
 		private string _srn;
-
 		public string SRN {
 			get { return _srn; }
 			set { _srn = value; }
