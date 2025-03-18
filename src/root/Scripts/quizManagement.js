@@ -1,7 +1,7 @@
 //Add doubleclick functionality to row to call modal
 //##################################################
 $(document).ready(function () {
-    $("#quizTableBody > tr").on("dblclick", function () {
+    $("#quizManagementTable tr:gt(0)").on("dblclick", function () {
         $("#editQuiz").modal("show");
     });
 });
