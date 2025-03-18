@@ -97,7 +97,38 @@
     </div>
     <!--#####################-->
 
-    <!-------Table---------->
+    <!--Work in progress on data retrieval repeater-->
+    <asp:Repeater ID="quizRepeater" runat="server">
+        <HeaderTemplate>
+            <table id="quizManagementTable" class="table table-hover table-bordered table-striped table-light">
+                <thead style="border-bottom: 1px solid black">
+                    <tr>
+                        <th width="30%">Name</th>
+                        <th width="10%">Short</th>
+                        <th width="10%">Random</th>
+                        <th width="10%">PPQ</th>
+                        <th width="10%">Questions</th>
+                    </tr>
+                </thead>
+        </HeaderTemplate>
+        <ItemTemplate>
+                <tr class="table-group-divider">
+                    <td><%# Eval("Name") %></td>
+                    <td><%# Eval("Short") %></td>
+                    <td><input class="form-check-input" type="checkbox" checked="<%# Eval("IsRandom").ToString() %>"></td>
+                    <td><%# Eval("PPQ") %></td>
+                    <td><button type="button" class="btn btn-primary" onclick="goToQuestions()">Questions</button></td>
+                </tr>
+        </ItemTemplate>
+        <FooterTemplate>
+            </table>
+   
+        </FooterTemplate>
+    </asp:Repeater>
+    <!--End repeater-->
+
+    
+    <!-------Placeholder Table
     <table id="quizManagementTable" class="table table-hover table-bordered table-striped">
         <thead class="table-light">
             <tr>
@@ -109,8 +140,6 @@
             </tr>
         </thead>
         <tbody id="quizTableBody" class="table-hover table-group-divider">
-
-            <!--placeholder row-->
             <tr>
                 <td>lorem</td>
                 <td>lorem</td>
@@ -118,11 +147,9 @@
                 <td>lorem</td>
                 <td><button type="button" class="btn btn-primary" onclick="goToQuestions()">Questions</button></td>
             </tr>
-            <!--##############-->
-            
         </tbody>
     </table>
-    <!--######################-->
+    ----------->
 
     <!--CSS and JS script references-->
     <script defer src="Content/bootstrap.css"></script>
