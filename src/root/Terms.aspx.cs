@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using coding_lms.data;
+using Microsoft.Ajax.Utilities;
 
 namespace coding_lms
 {
@@ -11,7 +13,15 @@ namespace coding_lms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack) 
+            {
+                var instructorDB = new InstructorDB();
+                var terms = instructorDB.GetTerms();
 
+                termsReapter.DataSource = terms;
+                termsReapter.DataBind();
+             }
+            
         }
     }
 }
