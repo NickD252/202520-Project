@@ -2,27 +2,14 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Terms</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="src\root\content\bootstrap.min.css" rel="stylesheet" />
-  <style>
-    table {
-        text-align: center;
-        background-color: darkgray;
-        border-collapse: collapse;  
-        height: -50%;
-     
-        margin-right: -9%;
-        margin-top: 15%;
-   
-    }
-    th, td {
+    <main>
+        <section class="row" aria-labelledby="aspnetTitle">
+            <h1 id="aspnetTitle">ASP.NET</h1>
+            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+        </section>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         color: cornsilk;
         padding: 1px;
@@ -63,9 +50,11 @@
     </div>
 </body>
 =======
+=======
+>>>>>>> origin/DEV
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started!</h2>
+                <h2 id="gettingStartedTitle">Getting started</h2>
                 <p>
                     ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
                 A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
@@ -94,6 +83,9 @@
             </section>
         </div>
     </main>
+<<<<<<< HEAD
 >>>>>>> DEV
+=======
+>>>>>>> origin/DEV
 
 </asp:Content>
