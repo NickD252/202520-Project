@@ -18,8 +18,8 @@ namespace coding_lms
                 var instructorDB = new InstructorDB();
                 var terms = instructorDB.GetTerms();
 
-                termsReapter.DataSource = terms;
-                termsReapter.DataBind();
+                termsRepeater.DataSource = terms;
+                termsRepeater.DataBind();
              }
             
         }
