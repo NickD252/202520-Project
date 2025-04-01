@@ -10,14 +10,10 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Styles.Render("~/Content/profileMenuStyles.css") %>
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-    <!--Style and JS references-->
-    <script defer src="Scripts/profileMenu.js"></script>
-    <link rel="stylesheet" href="Content/profileMenuStyles.css" />
-
 </head>
 <body>
     <form runat="server">
@@ -101,7 +97,11 @@
     </form>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+        <%: Scripts.Render("~/Scripts/profileMenu.js") %>
+        <%: Scripts.Render("~/Scripts/quizManagement.js") %>
+        <%: Scripts.Render("~/Scripts/sectionsview.js") %>
+        <%: Scripts.Render("~/Scripts/studentview-codebehind.js") %>
+        <%: Scripts.Render("~/Scripts/terms_view.js") %>
     </asp:PlaceHolder>
-
 </body>
 </html>

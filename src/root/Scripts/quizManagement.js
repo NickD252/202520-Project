@@ -15,15 +15,15 @@ document
 function visitNewQuiz() {
     var quizId = document.getElementById("shortNameInput").value;
     var quizName = document.getElementById("quizNameInput").value;
-    if (quizId == "" || quizName == "") {
-        if (quizId == "") {
+    if (quizId === "" || quizName === "") {
+        if (quizId === "") {
             document
                 .getElementById("invalidIdDiv")
                 .classList.remove("visually-hidden");
             document.getElementById("invalidId").innerHTML =
                 "You must enter a value in the Short Name field.";
         }
-        if (quizName == "") {
+        if (quizName === "") {
             document
                 .getElementById("invalidNameDiv")
                 .classList.remove("visually-hidden");
