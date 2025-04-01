@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer d-flex justify-content-between">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button id="createNewQuizBtn" type="button" class="btn btn-success">Create</button>
                 </div>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer d-flex justify-content-between">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button id="updateQuizBtn" type="button" class="btn btn-success">Update</button>
                 </div>
