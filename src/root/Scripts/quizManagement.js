@@ -16,26 +16,6 @@ $(document).ready(function ()
     $("#createNewQuizBtn").on("click", function ()
     {
         var quizId = $("#shortNameInput").val();
-        var quizName = $("#quizNameInput").val();
-        if (quizId === "" || quizName === "")
-        {
-            if (quizId === "")
-            {
-                document
-                    .getElementById("invalidIdDiv")
-                    .classList.remove("visually-hidden");
-                document.getElementById("invalidId").innerHTML =
-                    "You must enter a value in the Short Name field.";
-            }
-            if (quizName === "")
-            {
-                document
-                    .getElementById("invalidNameDiv")
-                    .classList.remove("visually-hidden");
-                document.getElementById("invalidName").innerHTML =
-                    "You must enter a value in the Name field.";
-            }
-        } else
         {
             window.location.href = "/questions/qz-" + quizId;
         }

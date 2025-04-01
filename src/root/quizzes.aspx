@@ -24,7 +24,7 @@
                     <div class="d-flex flex-column justify-content-center align-content-center">
                         <div class="input-group mb-3 d-flex flex-row">
                             <span class="input-group-text" style="width: 170px">Name:</span>
-                            <input id="quizNameInput" type="text" class="form-control" style="max-width: 400px" maxlength="255" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
+                            <input id="quizNameInput" type="text" pattern="[a-zA-Z0-9\s]" title="Quiz Name" class="form-control" style="max-width: 400px" maxlength="255" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Short Name:</span>
@@ -39,12 +39,6 @@
                                 <input id="newQuizRandomCheck" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
                             </div>
                             <span class="input-group-text" style="max-width:400px">Randomize</span>
-                        </div>
-                        <div id="invalidIdDiv" class="d-flex flex-row justify-content-center text-danger visually-hidden">
-                            <label id="invalidId"></label>
-                        </div>
-                        <div id="invalidNameDiv"class="d-flex flex-row justify-content-center text-danger visually-hidden">
-                            <label id="invalidName"></label>
                         </div>
                     </div>
                 </div>
