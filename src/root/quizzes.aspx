@@ -32,7 +32,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Points per Question:</span>
-                            <input id="pointsInput" type="text" style="max-width: 400px"  class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
+                            <input id="pointsInput" type="number" style="max-width: 400px"  class="form-control" placeholder="#" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
                         </div>
                         <div class="input-group mb-3 d-flex flex-row justify-content-center">
                             <div class="input-group-text">
@@ -77,7 +77,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Points per Question:</span>
-                            <input id="editPointsInput" type="text" class="form-control" placeholder="#" style="max-width: 400px" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
+                            <input id="editPointsInput" type="number" class="form-control" placeholder="#" style="max-width: 400px" aria-label="pointsPerQuestion" aria-describedby="pointsInput">
                         </div>
                         <div class="input-group mb-3 d-flex flex-row justify-content-center">
                             <div class="input-group-text">
