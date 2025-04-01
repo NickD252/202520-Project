@@ -49,8 +49,8 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id="createNewQuizBtn" type="button" class="btn btn-success">Create</button>
+                    <button type="button" class="btn btn-secondary" style="width: 5rem" data-bs-dismiss="modal">Close</button>
+                    <button id="createNewQuizBtn" type="button" class="btn btn-success" style="width: 5rem">Create</button>
                 </div>
             </div>
         </div>
@@ -88,8 +88,8 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id="updateQuizBtn" type="button" class="btn btn-success">Update</button>
+                    <button type="button" class="btn btn-secondary" style="width: 5rem" data-bs-dismiss="modal">Close</button>
+                    <button id="updateQuizBtn" type="button" class="btn btn-success" style="width: 5rem">Update</button>
                 </div>
             </div>
         </div>
