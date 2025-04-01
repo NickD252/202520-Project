@@ -1,5 +1,6 @@
 //Add doubleclick functionality to row to call modal
 //##################################################
+//Populate modal with row data
 $(document).ready(function () {
     $("#quizManagementTable tr:gt(0)").on("dblclick", function () {
         $("#editQuiz").modal("show");
