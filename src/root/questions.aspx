@@ -38,7 +38,7 @@
 
         #questionsTable {
             margin-left: 220px;
-            margin-top: 20px;
+            margin-top: -50px;
             width: 80%;
             border-collapse: collapse;
         }
@@ -52,9 +52,16 @@
         #newQuestionBtn {
             background-color: green;
             color: white;
-            padding: 10px 20px;
+            padding: 0px 10px;
             border: none;
+            width:125px;
+            height:50px;
             cursor: pointer;
+            border-radius:10px;
+            font-size:30px;
+            font-weight:bold;
+            margin-left:30px;
+            margin-top:10px;
         }
 
         #newQuestionBtn:hover {
@@ -111,25 +118,29 @@
     </style>
 </head>
 <body>
+ <div id="menu">
+     <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Questions</a></li>
+         <li><a href="#">Settings</a></li>
+     </ul>
+ </div>
     <!-- Button to trigger modal -->
     <button id="newQuestionBtn" class="green-button" onclick="openModal()">New</button>
+     
+    <!-- Adds Header text and sets size and placement -->
+ <p style="font-size:50px;text-align:center;">Questions
 
     <!-- Left menu (you can customize it as per your need) -->
-    <div id="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Questions</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </div>
+  
 
     <!-- Table for listing questions -->
     <table id="questionsTable">
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Body</th>
-                <th>Active</th>
+                <th style="background-color:rgba(169,169,169,0.5)">Title</th>
+                <th style="background-color:rgba(169,169,169,0.5)">Body</th>
+                <th style="background-color:rgba(169,169,169,0.5)">Active</th>
             </tr>
         </thead>
         <tbody>
@@ -183,6 +194,6 @@
             </form>
         </div>
     </div>
-
+<script src="modal.js"></script>
 </body>
 </html>
