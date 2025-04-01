@@ -4,13 +4,12 @@
 
     <!--header and 'new' button-->
     <div class="d-flex align-items-center justify-content-between mb-3">
-    <h1 class="mb-0">Quizzes</h1>
-    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#newQuiz">
-        New
-    </button>
-</div>
-
-    <!--########################-->
+        <h1 class="mb-0">Quizzes</h1>
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#newQuiz">
+            New
+        </button>
+    </div>
+    <!--######################-->
 
 
     <!--Create New Quiz modal-->
@@ -29,7 +28,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Short Name:</span>
-                            <input id="shortNameInput" type="text" class="form-control flex-grow-1" style="max-width: 400px" maxlength="25" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput">
+                            <input id="shortNameInput" type="text" class="form-control flex-grow-1" style="max-width: 400px" maxlength="25" placeholder="Short Name" aria-label="shortName" aria-describedby="shortNameInput" readonly>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Points per Question:</span>
@@ -126,30 +125,6 @@
         </FooterTemplate>
     </asp:Repeater>
     <!--End repeater-->
-
-    
-    <!-------Placeholder Table
-    <table id="quizManagementTable" class="table table-hover table-bordered table-striped">
-        <thead class="table-light">
-            <tr>
-                <th width="30%">&nbsp;Name</th>
-                <th width="10%">&nbsp;Short</th>
-                <th width="10%">&nbsp;Random</th>
-                <th width="10%">&nbsp;PPQ</th>
-                <th width="10%">&nbsp;Actions</th>
-            </tr>
-        </thead>
-        <tbody id="quizTableBody" class="table-hover table-group-divider">
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td><input class="form-check-input" type="checkbox" value=""></td>
-                <td>lorem</td>
-                <td><button type="button" class="btn btn-primary" onclick="goToQuestions()">Questions</button></td>
-            </tr>
-        </tbody>
-    </table>
-    ----------->
 
     <!--CSS and JS script references-->
     <script defer src="Content/bootstrap.css"></script>
