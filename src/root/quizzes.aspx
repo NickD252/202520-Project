@@ -51,7 +51,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id="createNewQuizBtn" onclick="visitNewQuiz()" type="button" class="btn btn-success">Create</button>
+                    <button id="createNewQuizBtn" type="button" class="btn btn-success">Create</button>
                 </div>
             </div>
         </div>
