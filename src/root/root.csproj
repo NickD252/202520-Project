@@ -259,8 +259,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="sections.aspx" />
     <Content Include="Site.Master" />
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     <Content Include="terms.aspx" />
 =======
     <Content Include="students.aspx" />
@@ -431,8 +430,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 =======
 >>>>>>> origin/DEV
     <Compile Include="terms.aspx.cs">
@@ -441,7 +439,7 @@
     </Compile>
     <Compile Include="terms.aspx.designer.cs">
       <DependentUpon>terms.aspx</DependentUpon>
-<<<<<<< HEAD
+
 =======
 =======
     </Compile>
@@ -452,7 +450,7 @@
     </Compile>
     <Compile Include="students.aspx.designer.cs">
       <DependentUpon>students.aspx</DependentUpon>
-<<<<<<< HEAD
+
 >>>>>>> DEV
 =======
 >>>>>>> origin/DEV
