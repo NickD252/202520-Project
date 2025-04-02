@@ -24,7 +24,7 @@
                     <div class="d-flex flex-column justify-content-center align-content-center">
                         <div class="input-group mb-3 d-flex flex-row">
                             <span class="input-group-text" style="width: 170px">Name:</span>
-                            <input id="quizNameInput" type="text" pattern="[a-zA-Z0-9\s]" title="Quiz Name" class="form-control" style="max-width: 400px" maxlength="255" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput">
+                            <input id="quizNameInput" type="text" pattern="[a-zA-Z0-9\s]" title="Quiz Name" class="form-control" style="max-width: 400px" maxlength="255" placeholder="Quiz Name" aria-label="quizName" aria-describedby="quizNameInput" required>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" style="width: 170px">Short Name:</span>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary" style="width: 5rem" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" style="width: 5rem" data-bs-dismiss="modal">Cancel</button>
                     <button id="createNewQuizBtn" type="button" class="btn btn-success" style="width: 5rem">Create</button>
                 </div>
             </div>
@@ -75,14 +75,14 @@
                         </div>
                         <div class="input-group mb-3 d-flex flex-row justify-content-center">
                             <div class="input-group-text">
-                                <input id="editQuizRandomCheck" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                <input id="editQuizRandomCheck" class="form-check-input mt-0" type="checkbox" aria-label="Checkbox for following text input">
                             </div>
                             <span class="input-group-text" style="max-width: 400px">Randomize</span>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary" style="width: 5rem" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" style="width: 5rem" data-bs-dismiss="modal">Cancel</button>
                     <button id="updateQuizBtn" type="button" class="btn btn-success" style="width: 5rem">Update</button>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                         <th width="10%">Short</th>
                         <th width="10%">Random</th>
                         <th width="10%">PPQ</th>
-                        <th width="10%">Questions</th>
+                        <th width="10%">Actions</th>
                     </tr>
                 </thead>
         </HeaderTemplate>
