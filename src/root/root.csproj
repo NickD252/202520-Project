@@ -454,6 +454,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\data\data.csproj">
+      <Project>{bdbeab57-e18a-4f0b-9100-432632d351ec}</Project>
+      <Name>data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\quiz\quiz.csproj">
+      <Project>{1b35080e-96bd-480a-be03-1b055b22d29d}</Project>
+      <Name>quiz</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
