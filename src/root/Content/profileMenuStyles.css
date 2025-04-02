@@ -8,12 +8,17 @@
     height: auto;
     z-index: 1;
     top: 4.5rem;
-    right: 0;
-    background-color: #2D3238 !important;
+    left: 0;
+    background-color: #64676b !important;
     overflow-x: hidden;
     width: 0;
     position: fixed;
     padding-top: 0;
+}
+
+#profileSubMenu a {
+    border-bottom: solid 1px #b1b7bc;
+    border-top: solid 1px #b1b7bc;
 }
 
 
@@ -29,7 +34,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #2D3238 !important;
     overflow-x: hidden;
     transition: 0.3s;
@@ -50,7 +55,7 @@
         .sidenav a:hover {
             color: #f1f1f1;
             transition: 0.3s;
-            border-left: solid 5px #00d600;
+            border-right: solid 5px #00d600;
         }
 
     .sidenav .closebtn {

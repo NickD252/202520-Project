@@ -58,7 +58,7 @@
         <!---Profile Menu elements--->
         <div id="profileMenuNav" class="sidenav">
             <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
-            <a id="menuTerms" href="#" onclick="displayTerms()">Terms</a>
+            <a id="menuTerms" href="#">Terms</a>
             <a id="menuQuizzes" href="#" onclick="closeAllMenus()">Quizzes</a>
             <a id="menuCalendar" href="#" onclick="closeAllMenus()">Calendar</a>
         </div>

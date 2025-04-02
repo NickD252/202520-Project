@@ -14,7 +14,7 @@ document.getElementById("menuBtn").addEventListener("click", function ()
         submenu.style.width = "0";
     } else
     {
-        sidebar.style.width = "13rem";
+        sidebar.style.width = "10rem";
         bdstyle.transition = "0.3s";
         bdstyle.marginRight = "0";
     }
@@ -31,12 +31,12 @@ function closeNav() {
 }
 
 function displayTerms() {
-    if (submenu.style.width == "13rem") {
+    if (submenu.style.width == "10rem") {
         submenu.style.width = "0";
         submenu.style.transitionDuration = "0ms";
     } else {
-        submenu.style.width = "13rem";
-        submenu.style.marginRight = "13rem";
+        submenu.style.width = "10rem";
+        submenu.style.marginLeft = "10rem";
         submenu.style.transitionDuration = "0ms";
     }
 }
@@ -48,6 +48,45 @@ function closeAllMenus() {
     bdstyle.transition = "0.3s";
     bdstyle.backgroundColor = "white";
 }
+
+$(document).ready(function ()
+{
+    $("#menuTerms").hover(
+        function ()
+        {
+            $("#profileSubMenu").css("width", "10rem");
+            $("#profileSubMenu").css("transition-duration", "0ms");
+            $("#profileSubMenu").css("margin-left", "10rem");
+        },
+        function ()
+        {
+            $("#profileSubMenu").css("width", "0rem");
+            $("#profileSubMenu").css("transition-duration", "0ms");
+            $("#profileSubMenu").css("margin-left", "0rem");
+        }
+    );
+    $("menuTerms").on("click", function ()
+    {
+        $("#profileSubMenu").css("width", "10rem");
+        $("#profileSubMenu").css("transition-duration", "0ms");
+        $("#profileSubMenu").css("margin-left", "10rem");
+    });
+
+    $("#profileSubMenu").hover(
+        function ()
+        {
+            $("#profileSubMenu").css("width", "10rem");
+            $("#profileSubMenu").css("transition-duration", "0ms");
+            $("#profileSubMenu").css("margin-left", "10rem");
+        },
+        function ()
+        {
+            $("#profileSubMenu").css("width", "0rem");
+            $("#profileSubMenu").css("transition-duration", "0ms");
+            $("#profileSubMenu").css("margin-left", "0rem");
+        }
+    );
+})
 
 //Redirection from menu links
 $(document).ready(function () {
