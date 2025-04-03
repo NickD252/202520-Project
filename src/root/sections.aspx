@@ -25,18 +25,24 @@
                  </thead>
         </HeaderTemplate>
         <ItemTemplate>
+                
                  <tr>
                      <td><%# Eval("Term") %></td>
                      <td><%# Eval("Course") %></td>
+                     <td><%# Eval("Term") %>-<%# Eval("CRN") %></td>
                      <td><%# Eval("CRN") %></td>
                      <td><%# Eval("StudentCount") %></td>
                  </tr>
+              
         </ItemTemplate>
+        <FooterTemplate>
+            </table>
+        </FooterTemplate>
     </asp:Repeater>
     <!----------->
 
 
-
+    
 
  <!----Section View Table---->
    <main>
@@ -115,6 +121,7 @@
      <!--Scripts-->
    <script defer src="Content/bootstrap.css"></script>
    <script defer src="Scripts/sectionsview.js"></script>
+   <script defer src="Scripts/terms_view.js"></script>
   <!----------->
     
 </asp:Content>
