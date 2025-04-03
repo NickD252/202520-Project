@@ -14,6 +14,10 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <!--Style and JS references-->
+    <script defer src="Scripts/profileMenu.js"></script>
+    <link rel="stylesheet" href="Content/profileMenuStyles.css" />
+
 </head>
 <body>
     <form runat="server">
@@ -35,11 +39,17 @@
                             <ul class="navbar-nav navbar-right">
                                 <li><a runat="server" class="nav-link" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" class="nav-link" href="~/Account/Login">Log in</a></li>
+                                <!--Menu placeholder link button-->
+                                <a id="menuBtn" class="btn btn-primary" role="button">Menu
+                                </a>
+                                <!---------------------->
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="navbar-nav navbar-right">
+                                <!--menu link will be sourced here-->
                                 <li><a runat="server" class="nav-link" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <!--------->
                                 <li>
                                     <asp:LoginStatus runat="server" CssClass="nav-link" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                 </li>
@@ -49,7 +59,20 @@
                 </div>
             </div>
         </nav>
-        <div class="container body-content">
+        <!---Profile Menu elements--->
+        <div id="profileMenuNav" class="sidenav">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="menuTerms" href="#" onclick="displayTerms()">Terms</a>
+            <a id="menuQuizzes" href="#" onclick="closeAllMenus()">Quizzes</a>
+            <a id="menuCalendar" href="#" onclick="closeAllMenus()">Calendar</a>
+        </div>
+        <div id="profileSubMenu" class="sidenav">
+            <a href="#" onclick="closeAllMenus()">Spring 2025 (202520)</a>
+            <a href="#" onclick="closeAllMenus()">Fall 2025 (202510)</a>
+            <a href="#" onclick="closeAllMenus()">Summer 2024 (202430)</a>
+        </div>
+        <!--------------------------->
+        <div onclick="closeAllMenus()" class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
