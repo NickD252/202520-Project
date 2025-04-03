@@ -7,18 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace coding_lms {
+namespace coding_lms
+{
 
 
-	public partial class SiteMaster {
+    public partial class SiteMaster
+    {
 
-		/// <summary>
-		/// MainContent control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
-	}
+        /// <summary>
+        /// termsRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater termsRepeater;
+
+        /// <summary>
+        /// MainContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+    }
 }
