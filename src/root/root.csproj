@@ -259,21 +259,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="sections.aspx" />
     <Content Include="Site.Master" />
-<<<<<<< HEAD
     <Content Include="terms.aspx" />
     <Content Include="students.aspx" />
-    <Content Include="terms.aspx" />
-    <Content Include="students.aspx" />
-=======
-
-    <Content Include="terms.aspx" />
-
-    <Content Include="students.aspx" />
-
-    <Content Include="terms.aspx" />
-    <Content Include="students.aspx" />
-
->>>>>>> Terms-View
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -436,33 +423,21 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-<<<<<<< HEAD
-=======
-
->>>>>>> Terms-View
     <Compile Include="terms.aspx.cs">
       <DependentUpon>terms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="terms.aspx.designer.cs">
       <DependentUpon>terms.aspx</DependentUpon>
-<<<<<<< HEAD
-    </Compile>
-=======
 
     </Compile>
 
->>>>>>> Terms-View
     <Compile Include="students.aspx.cs">
       <DependentUpon>students.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="students.aspx.designer.cs">
       <DependentUpon>students.aspx</DependentUpon>
-<<<<<<< HEAD
-=======
-
->>>>>>> Terms-View
     </Compile>
   </ItemGroup>
   <ItemGroup>
