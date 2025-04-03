@@ -261,13 +261,13 @@
     <Content Include="Site.Master" />
 
     <Content Include="terms.aspx" />
-=======
+
     <Content Include="students.aspx" />
->>>>>>> DEV
-=======
+
+
     <Content Include="terms.aspx" />
     <Content Include="students.aspx" />
->>>>>>> origin/DEV
+
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -431,8 +431,7 @@
     </Compile>
     <Compile Include="Startup.cs" />
 
-=======
->>>>>>> origin/DEV
+
     <Compile Include="terms.aspx.cs">
       <DependentUpon>terms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -440,10 +439,9 @@
     <Compile Include="terms.aspx.designer.cs">
       <DependentUpon>terms.aspx</DependentUpon>
 
-=======
-=======
+
     </Compile>
->>>>>>> origin/DEV
+
     <Compile Include="students.aspx.cs">
       <DependentUpon>students.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -451,9 +449,7 @@
     <Compile Include="students.aspx.designer.cs">
       <DependentUpon>students.aspx</DependentUpon>
 
->>>>>>> DEV
-=======
->>>>>>> origin/DEV
+
     </Compile>
   </ItemGroup>
   <ItemGroup>
