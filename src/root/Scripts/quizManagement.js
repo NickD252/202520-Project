@@ -1,5 +1,4 @@
 //Add doubleclick functionality to row to call modal
-//##################################################
 //Populate modal with row data
 $(document).ready(function () {
     $("#quizManagementTable tr:gt(0)").on("dblclick", function () {
@@ -7,8 +6,45 @@ $(document).ready(function () {
         $("#editQuizNameInput").val($(this).find("td:eq(0)").text());
         $("#editShortNameInput").val($(this).find("td:eq(1)").text());
         $("#editPointsInput").val($(this).find("td:eq(3)").text());
+        $("#editQuizRandomCheck").prop("checked", $(this).find("td:eq(2)").val().trim() == "True" ? true : false);
     });
 });
+
+//show checkbox state on page load
+//show quesiton button on page load (not functional/cant figure out how to pass ID to GetQuestion and retrieve that value for each row)
+$(document).ready(function ()
+{
+    $(".checker").each(function ()
+    {
+        var checkedOrNot = $(this).val().trim();
+        if (checkedOrNot == "True")
+        {
+            $(this).prop("checked", true);
+        }
+        else
+        {
+            $(this).prop("checked", false);
+        }
+    })
+
+    $(".questionBtn").each(function ()
+    {
+        var questionOrNot = $(this).val().trim();
+        if (questionOrNot > 0)
+        {
+            $(this).show();
+            $(this).on("click", function ()
+            {
+                window.location.href = "questions";
+            })
+        }
+        else
+        {
+            $(this).hide();
+        }
+    })
+})
+
 
 //Consolidation of create new quiz features and actions
 $(document).ready(function ()
@@ -42,16 +78,18 @@ $(document).ready(function ()
     });
 });
 
+//Refreshes quizzes page on clicking update quiz button
+//Does not add data to new row due to no live data
 $(document).ready(function ()
 {
     $("#updateQuizBtn").on("click", function ()
     {
         window.location.href = "/quizzes";
-    });
-});
+    })
+})
 
 //Clear modal inputs on close
-//###########################
+//Attempted to consolidate and not daisy chain
 $(document).ready(function () {
     $("#newQuiz, #editQuiz").on("hidden.bs.modal", function () {
         $(this)

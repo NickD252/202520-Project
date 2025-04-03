@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="quizzes.aspx.cs" Inherits="coding_lms.quizzes" %>
+﻿<%@ Page Title="quizzes" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="quizzes.aspx.cs" Inherits="coding_lms.quizzes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
@@ -108,9 +108,9 @@
                 <tr class="table-group-divider" style="text-align: center">
                     <td><%# Eval("Name") %></td>
                     <td><%# Eval("Short") %></td>
-                    <td><input class="form-check-input" type="checkbox" checked="<%# Eval("IsRandom").ToString() %>"></td>
+                    <td><input class="form-check-input checker" type="checkbox" value="<%# Eval("IsRandom")%>"/></td>
                     <td><%# Eval("PPQ") %></td>
-                    <td><button type="button" class="btn btn-primary" onclick="goToQuestions()">Questions</button></td>
+                    <td><button type="button" class="btn btn-primary questionBtn" value="<%# Eval("ID")%>"/>Questions</button></td>
                 </tr>
         </ItemTemplate>
         <FooterTemplate>
@@ -125,7 +125,7 @@
     <script defer src="Scripts/quizManagement.js"></script>
     <script>
         function goToQuestions() {
-            window.location.href = 'questions.aspx';
+            window.location.href = 'questions';
         }
     </script>
     <!--##################-->
