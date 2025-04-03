@@ -53,25 +53,11 @@
  
 
  
-    <!--CSS Styling-->
-    <header>
-      <style>
-          table, th, td {
-          border: 1px solid black;
-          border-collapse: collapse;
-          }
-          th {
-          text-align: center;
-         
-          }
-          #tablehead{
-          
-          }
-      </style>
-    </header>
+    
 <!--------------->
      <!--Scripts-->
    <script defer src="Content/bootstrap.css"></script>
+   <script defer src="Content/sections.css"></script>
    <script defer src="Scripts/sectionsview.js"></script>
    <script defer src="Scripts/terms_view.js"></script>
   <!----------->
