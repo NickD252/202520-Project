@@ -94,9 +94,9 @@
     <asp:Repeater ID="quizRepeater" runat="server">
         <HeaderTemplate>
             <table id="quizManagementTable" class="table table-hover table-bordered table-striped table-light">
-                <thead style="border-bottom: 1px solid black">
+                <thead style="border-bottom: 1px solid black; text-align: center">
                     <tr>
-                        <th width="30%">Name</th>
+                        <th width="20%">Name</th>
                         <th width="10%">Short</th>
                         <th width="10%">Random</th>
                         <th width="10%">PPQ</th>
@@ -105,7 +105,7 @@
                 </thead>
         </HeaderTemplate>
         <ItemTemplate>
-                <tr class="table-group-divider">
+                <tr class="table-group-divider" style="text-align: center">
                     <td><%# Eval("Name") %></td>
                     <td><%# Eval("Short") %></td>
                     <td><input class="form-check-input" type="checkbox" checked="<%# Eval("IsRandom").ToString() %>"></td>
