@@ -42,6 +42,13 @@ $(document).ready(function ()
     });
 });
 
+$(document).ready(function ()
+{
+    $("#updateQuizBtn").on("click", function ()
+    {
+        window.location.href = "/quizzes";
+    });
+});
 
 //Clear modal inputs on close
 //###########################
