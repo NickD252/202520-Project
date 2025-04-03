@@ -238,7 +238,7 @@ namespace coding_lms.data {
 		public IEnumerable<Term> GetTerms() {
 #if DEBUG
 			return new List<Term>(){
-				new Term{ID = 202520, SchoolYear=2025, Name=TermEnum.Spring},
+                new Term{ID = 202520, SchoolYear=2025, Name=TermEnum.Spring},
 				new Term{ID = 202510, SchoolYear=2025, Name=TermEnum.Fall },
 				new Term{ID = 202430, SchoolYear=2024, Name=TermEnum.Summer },
 				new Term{ID=202420, SchoolYear=2024, Name=TermEnum.Spring}

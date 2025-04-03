@@ -22,7 +22,8 @@ namespace coding_lms
 
 				quizRepeater.DataSource = quizzes;
 				quizRepeater.DataBind();
-			}
+            }
+
 		}
-	}
+    }
 }

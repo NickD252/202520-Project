@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Terms View" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="coding_lms._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="coding_lms._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -8,35 +8,6 @@
             <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
             <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
         </section>
-
-</style>
-</head>
-<body>
-    <div class="d-flex flex-row justify-content-end">
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>School Year</th>
-            <th>Term</th>
-        </tr>
-        <tr>
-            <td><button>Press</button></td>
-            <td><button>Press</button></td>
-            <td><button>Press</button></td>
-        </tr>
-        <tr>
-            <td><button>Press</button></td>
-            <td><button>Press</button></td>
-            <td><button>Press</button></td>
-        </tr>
-        <tr>
-            <td><button>Press</button></td>
-            <td><button>Press</button></td>
-            <td><button>Press</button></td>
-        </tr>
-    </table>
-    </div>
-</body>
 
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
@@ -69,6 +40,5 @@
             </section>
         </div>
     </main>
-
 
 </asp:Content>
