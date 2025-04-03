@@ -65,7 +65,7 @@
         <div id="profileSubMenu" class="sidenav">
             <asp:Repeater ID="termsRepeater" runat="server">
                 <ItemTemplate>
-                    <a href="<%# "terms/" + Eval("ID") %>" onclick="closeAllMenus()">
+                    <a href="terms" onclick="closeAllMenus()">
                         <%# Eval("Name") %> <%# Eval("SchoolYear") %> (<%# Eval("ID") %>)</a>
                 </ItemTemplate>
             </asp:Repeater>
