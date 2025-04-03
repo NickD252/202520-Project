@@ -3,24 +3,24 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 <!---Header--->
-  <div class="d-flex mb-3">
-     <div class="me-auto p-2">
+  <div class="d-flex justify-content-center">
+     
         <h1>Sections</h1>
-    </div>
+   
    </div>
 <!---------->
 
     <!--- New Sections Table --->
     <asp:Repeater ID="sectionsTable" runat="server">
         <HeaderTemplate>
-            <table id="sectionViewTable" class="table table-striped table-hover">
-                 <thead class="table-secondary">
+            <table id="sectionViewTable" class="table table-bordered table-striped table-hover">
+                 <thead class="table-secondary text-center"">
                   <tr>
-                    <th width="10%">&nbsp;Term</th>
-                    <th width="10%">&nbsp;Course</th>
-                    <th width="10%">&nbsp;ID</th>
-                    <th width="10%">&nbsp;CRN</th>
-                    <th width="10%">&nbsp;Students</th>
+                    <th width="5%">&nbsp;Term</th>
+                    <th width="5%">&nbsp;Course</th>
+                    <th width="5%">&nbsp;ID</th>
+                    <th width="5%">&nbsp;CRN</th>
+                    <th width="5%">&nbsp;Students</th>
                   </tr>
                  </thead>
         </HeaderTemplate>
@@ -44,12 +44,6 @@
 
     
 
-
-   <main>
-       
-    
-
-   </main>
  
 
  
