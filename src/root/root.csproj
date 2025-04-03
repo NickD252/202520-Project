@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -259,20 +259,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="sections.aspx" />
     <Content Include="Site.Master" />
-
     <Content Include="terms.aspx" />
     <Content Include="students.aspx" />
-    <Content Include="terms.aspx" />
-    <Content Include="students.aspx" />
-
-
-    <Content Include="terms.aspx" />
-
-    <Content Include="students.aspx" />
-
-    <Content Include="terms.aspx" />
-    <Content Include="students.aspx" />
-
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -435,26 +423,19 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-
     <Compile Include="terms.aspx.cs">
       <DependentUpon>terms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="terms.aspx.designer.cs">
       <DependentUpon>terms.aspx</DependentUpon>
-
     </Compile>
-
-
-
-
     <Compile Include="students.aspx.cs">
       <DependentUpon>students.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="students.aspx.designer.cs">
       <DependentUpon>students.aspx</DependentUpon>
-
     </Compile>
   </ItemGroup>
   <ItemGroup>
