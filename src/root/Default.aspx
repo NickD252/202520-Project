@@ -9,18 +9,7 @@
             <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
         </section>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        color: cornsilk;
-        padding: 1px;
-    }
-    th {
-        background-color: indigo;
-    }
-    button {
-        padding: 1px;
-        margin: 0;
-    }
+
 </style>
 </head>
 <body>
@@ -49,9 +38,7 @@
     </table>
     </div>
 </body>
-=======
-=======
->>>>>>> origin/DEV
+
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
                 <h2 id="gettingStartedTitle">Getting started</h2>
@@ -83,9 +70,6 @@
             </section>
         </div>
     </main>
-<<<<<<< HEAD
->>>>>>> DEV
-=======
->>>>>>> origin/DEV
+
 
 </asp:Content>
