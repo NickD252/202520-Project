@@ -44,61 +44,13 @@
 
     
 
- <!----Section View Table---->
+
    <main>
        
-     <div>
-         <div>
-             <!------
-             <table id="sectionViewTable" class="table table-striped table-hover">
-                <thead class="table-secondary">
-                  <tr>
-                   <th width="10%">&nbsp;Term</th>
-                   <th width="10%">&nbsp;Course</th>
-                   <th width="10%">&nbsp;ID</th>
-                   <th width="10%">&nbsp;CRN</th>
-                   <th width="10%">&nbsp;Students</th>
-                  </tr>
-                 </thead>
-        <tbody id="sectionsTable">
-          <!--PlaceHolder Data--
-            <tr id="tablehead">
-                <td>loremmmmmmmmmmmmmm</td>
-                <td>loremmmmmmmmm</td>
-                <td>loremmmmmmmmmmmmmmmmmmmmmmmmmmmm</td>
-                <td>loremmmmm</td>
-                <td>loremmmmmmmmmmmmmmmmmmm</td>
-            </tr>
-           <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-           <tr>
-               <td>Egg</td>
-               <td>Cheese</td>
-               <td>Bread</td>
-               <td>Pizza</td>
-               <td>Garlic</td>
-            </tr>
-           <tr>
-               <td>Chicken</td>
-               <td>Beef</td>
-               <td>Sheep</td>
-               <td>Shark</td>
-               <td>Wheat</td>
-            </tr>
-          <!----------------------
-        </tbody>
-    </table>
-             --->
-         </div>
-     </div>
+    
 
    </main>
- <!-------------------------->
+ 
 
  
     <!--CSS Styling-->
