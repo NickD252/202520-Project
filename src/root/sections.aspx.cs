@@ -12,10 +12,14 @@ namespace coding_lms
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			if (!IsPostBack)
-			{
+		     if (!IsPostBack)
+			 {
+				var instructordb = new InstructorDB();
+				var sections = instructordb.GetSectionsView(); 
 
-			}
+				sectionsTable.DataSource = sections;
+				sectionsTable.DataBind();
+			 }
 		}
 	}
 }
