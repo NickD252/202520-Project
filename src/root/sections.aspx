@@ -13,8 +13,9 @@
     <!--- New Sections Table --->
     <asp:Repeater ID="sectionsTable" runat="server">
         <HeaderTemplate>
-            <table id="sectionViewTable" class="table table-bordered table-striped table-hover">
-                 <thead class="table-secondary text-center"">
+           <div class="d-flex justify-content-center">
+            <table id="sectionViewTable" class="w-75 table table-bordered table-striped table-hover">
+                 <thead  class="table-secondary text-center"">
                   <tr>
                     <th width="5%">&nbsp;Term</th>
                     <th width="5%">&nbsp;Course</th>
@@ -37,6 +38,7 @@
         </ItemTemplate>
         <FooterTemplate>
             </table>
+           </div>
         </FooterTemplate>
     </asp:Repeater>
     <!----------->
