@@ -260,7 +260,7 @@
     <Content Include="sections.aspx" />
     <Content Include="Site.Master" />
     <Content Include="terms.aspx" />
-    <Content Include="students.aspx" />
+    <Content Include="student.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -430,12 +430,12 @@
     <Compile Include="terms.aspx.designer.cs">
       <DependentUpon>terms.aspx</DependentUpon>
     </Compile>
-    <Compile Include="students.aspx.cs">
-      <DependentUpon>students.aspx</DependentUpon>
+    <Compile Include="student.aspx.cs">
+      <DependentUpon>student.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="students.aspx.designer.cs">
-      <DependentUpon>students.aspx</DependentUpon>
+    <Compile Include="student.aspx.designer.cs">
+      <DependentUpon>student.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
