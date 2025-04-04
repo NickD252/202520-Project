@@ -1,15 +1,18 @@
 ﻿<%@ Page Title="terms" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="terms.aspx.cs" Inherits="coding_lms.Terms" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-  
+
     <div class="d-flex flex-row justify-content-center">
         <h1 class="text-center">Terms</h1>
     </div>
-   
+
     <asp:Repeater ID="termsRepeater" runat="server">
         <HeaderTemplate>
-            <table id="termsBody" class="table table-hover table-bordered table-striped">
+            <!--size of table and location-->
+            <div class="d-flex justify-content-center">
+                <table id="termsBody" class="w-75 table table-hover table-bordered table-striped">
                     <thead>
+                        <!--table cols-->
                         <tr>
                             <th>
                                 <h4>ID</h4>
@@ -22,10 +25,9 @@
                             </th>
                         </tr>
                     </thead>
-               
-            
         </HeaderTemplate>
         <ItemTemplate>
+            <!--table cells-->
             <tr>
                 <td><%# Eval("ID") %></td>
                 <td><%# Eval("SchoolYear") %></td>
@@ -33,9 +35,9 @@
             </tr>
         </ItemTemplate>
         <FooterTemplate>
-        </table>
-        </FooterTemplate> 
-
+            </table>
+            </div>
+        </FooterTemplate>
     </asp:Repeater>
     <script defer src="Scripts/terms_view.js"></script>
     <script defer src="Content/bootstrap.css"></script>
