@@ -58,14 +58,14 @@
         <!---Profile Menu elements--->
         <div id="profileMenuNav" class="sidenav">
             <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
-            <a id="menuTerms" href="terms">Terms</a>
-            <a id="menuQuizzes" href="quizzes">Quizzes</a>
-            <a id="menuCalendar" href="calendar">Calendar</a>
+            <a runat="server" id="menuTerms" href="terms">Terms</a>
+            <a runat="server" id="menuQuizzes" href="quizzes">Quizzes</a>
+            <a runat="server" id="menuCalendar" href="sections">Calendar</a>
         </div>
         <div id="profileSubMenu" class="sidenav">
             <asp:Repeater ID="termsRepeater" runat="server">
                 <ItemTemplate>
-                    <a href="terms">
+                    <a href="trm_<%# Eval("ID") %>">
                         <%# Eval("Name") %> <%# Eval("SchoolYear") %> (<%# Eval("ID") %>)</a>
                 </ItemTemplate>
             </asp:Repeater>
