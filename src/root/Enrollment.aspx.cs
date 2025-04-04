@@ -20,7 +20,7 @@ namespace coding_lms {
 				var InstructorDB instructorDb = new InstructorDB();
 				var IEnumurable<EnrollmentView> Enrollment = instructorDb.GetEnrollmentViews();
 
-				// Data bind enrollment in a repeater.
+				// Data bind enrollment data in a repeater.
 				enrollmentRepeater.DataSource = Enrollment;
 				enrollmentRepeater.DataBind();
 			}
