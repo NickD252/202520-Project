@@ -15,6 +15,33 @@ namespace coding_lms
     {
 
         /// <summary>
+        /// menuTerms control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor menuTerms;
+
+        /// <summary>
+        /// menuQuizzes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor menuQuizzes;
+
+        /// <summary>
+        /// menuCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor menuCalendar;
+
+        /// <summary>
         /// termsRepeater control.
         /// </summary>
         /// <remarks>

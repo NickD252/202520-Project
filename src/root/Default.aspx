@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <main id="defaultview">
-        <section class="row" aria-labelledby="aspnetTitle">
+        <section class="row" aria-labelledby="aspnetTitle"/>
     </main>
 
 </asp:Content>
