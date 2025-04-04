@@ -1,29 +1,22 @@
 // Open the modal
 function openModal() {
-    document.getElementById("questionModal").style.display = "block";
+    $("#questionModal").fadeIn();
 }
 
 // Close the modal
 function closeModal() {
-    document.getElementById("questionModal").style.display = "none";
+    $("#questionModal").fadeOut();
 }
 
 // Function to save question when the "Save Question" button is clicked
 function saveQuestion() {
-    var title = document.getElementById("title").value;
-    var body = document.getElementById("body").value;
-    var type = document.getElementById("type").value;
-    var options = document.getElementById("options").value;
+    var title = $("#title").val();
+    var body = $("#body").val();
+    var type = $("#type").val();
+    var options = $("#options").val();
 
-    // Send data to the server
-    console.log("Saving Question...");
-    console.log("Title: " + title);
-    console.log("Body: " + body);
-    console.log("Type: " + type);
-    console.log("Options: " + options);
+    // TODO: You can handle form data submission here via AJAX if needed
 
     // Close the modal after saving
     closeModal();
-
-    
 }
