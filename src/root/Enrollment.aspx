@@ -4,13 +4,13 @@
     <!--Create header template-->
     <HeaderTemplate>
         <!--Create table-->
-        <table id="enrollmentDataTable" class="table table-hover table-bordered table-striped table-light">
+        <table id="enrollmentViewTable" class="table table-hover table-bordered table-striped table-light">
             <!--Create table head-->
-            <thead style="border-bottom: 1px solid black">
+            <thead style="border: 1px solid black">
                 <!--Create table rows-->
                 <tr>
                     <!--Create table headers for the rows-->
-                    <th width="30%">Term</th>
+                    <th width="10%">Term</th>
                     <th width="10%">Course</th>
                     <th width="10%">CRN</th>
                     <th width="10%">Students</th>
@@ -25,3 +25,18 @@
             <td><%# Eval("CRN") %></td>
             <td><button type="button" class="btn" ondblclick="toStudentList()">Students</button></td>
     </ItemTemplate>
+    <FooterTemplate>
+        </table>
+    </FooterTemplate>
+</asp:Repeater>
+<!--End Repeater-->
+
+<!--JS reference-->
+<script defer src="Scripts/EnrollmentView.js"></script>
+
+<!--Create script for Students button function-->
+<script>
+    function toStudentList() {
+        window.location.href = "students.aspx";
+    }
+</script>
