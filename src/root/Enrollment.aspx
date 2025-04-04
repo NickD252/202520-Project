@@ -16,5 +16,12 @@
                     <th width="10%">Students</th>
                 </tr>
             </thead>
-        </table>
     </HeaderTemplate>
+    <!--Create Item Template-->
+    <ItemTemplate>
+        <tr class="table-group-divider">
+            <td><%# Eval("Term") %></td>
+            <td><%# Eval("Course") %></td>
+            <td><%# Eval("CRN") %></td>
+            <td><button type="button" class="btn" ondblclick="toStudentList()">Students</button></td>
+    </ItemTemplate>
