@@ -4,7 +4,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Questions</title>
+    
+    <!-- jQuery CDN (must be loaded before modal.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Your jQuery-based modal script -->
     <script type="text/javascript" src="scripts/modal.js"></script>
+
     <style>
         /* Basic styling */
         body {
@@ -53,14 +59,14 @@
             color: white;
             padding: 0px 10px;
             border: none;
-            width: 125px;
-            height: 50px;
+            width:125px;
+            height:50px;
             cursor: pointer;
-            border-radius: 10px;
-            font-size: 30px;
-            font-weight: bold;
-            margin-left: 30px;
-            margin-top: 10px;
+            border-radius:10px;
+            font-size:30px;
+            font-weight:bold;
+            margin-left:30px;
+            margin-top:10px;
         }
 
         #newQuestionBtn:hover {
@@ -102,7 +108,6 @@
             cursor: pointer;
         }
 
-        /* Styling for the form inside the modal */
         form {
             margin-top: 20px;
         }
@@ -126,10 +131,9 @@
     </div>
 
     <!-- Button to trigger modal -->
-    <button id="newQuestionBtn" class="green-button" onclick="openModal()">New</button>
-
-    <!-- Header text -->
-    <p style="font-size: 50px; text-align: center;">Questions</p>
+    <button id="newQuestionBtn" onclick="openModal()">New</button>
+    
+    <p style="font-size:50px;text-align:center;">Questions</p>
 
     <!-- Table for listing questions -->
     <table id="questionsTable">
