@@ -194,6 +194,6 @@
             </form>
         </div>
     </div>
-<script src="modal.js"></script>
+    <script defer src="Scripts/questionManagment.js"></script>
 </body>
 </html>
