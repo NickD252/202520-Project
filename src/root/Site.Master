@@ -10,6 +10,7 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Styles.Render("~/Content/profileMenuStyles.css") %>
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -18,22 +19,101 @@
     <script defer src="Scripts/profileMenu.js"></script>
     <link rel="stylesheet" href="Content/profileMenuStyles.css" />
 
+    <!--custom styling-->
+    <style>
+        footer {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            z-index: 2;
+        }
+        .custom-navbar {
+            background-color: #1c4e80;
+            padding: 5px;
+        }
+
+        .custom-navbar a {
+            color: white;
+            font-family: Verdana;
+            font-size: 16px;
+        }
+
+        .navbar-brand img {
+            max-height: 48px;   
+        }
+
+        .about-content {
+            
+        }
+        main h3 {
+            text-align: center;
+        }
+        .aboutcontent1, .aboutcontent2, .aboutcontent3 {
+            background-color: #f9f9f9;
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #sitelinks {
+             background-color: #f9f9f9;
+             padding: 20px; 
+             margin-bottom: 20px; 
+             border-radius: 5px; 
+             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+             text-align: center;
+             list-style-type: none;
+        }
+
+        #sitelinks li a {
+             display: inline-block;
+             padding: 10px 20px;          
+             background-color: #1c4e80;   
+             color: white;                
+             text-decoration: none;       
+             border-radius: 5px;          
+             margin-bottom: 10px;         
+             transition: background-color 0.3s; 
+        }
+
+        #defaultview {
+            background-color: #f9f9f9;
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+
 </head>
-<body>
-    <form runat="server">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+<body class="d-flex flex-column h-90">
+    <form runat="server" style="max-height: 85vh">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm custom-navbar" style="z-index: 2">
             <div class="container">
-                <a class="navbar-brand" runat="server" href="~/">Application name</a>
+
+                <!--Class navbar-brand to hold logo-->
+                <a class="navbar-brand" runat="server" href="~/">
+                    <img runat="server" src="Images/JSCCproj.png" alt="Logo placeholder" />
+                </a>
+
+                <!--Mobile menu-->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!--Global Navigation links-->
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
+
+                <!--Login section-->
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="navbar-nav navbar-right">
@@ -61,23 +141,29 @@
         </nav>
         <!---Profile Menu elements--->
         <div id="profileMenuNav" class="sidenav">
-            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
-            <a id="menuTerms" href="#" onclick="displayTerms()">Terms</a>
-            <a id="menuQuizzes" href="#" onclick="closeAllMenus()">Quizzes</a>
-            <a id="menuCalendar" href="#" onclick="closeAllMenus()">Calendar</a>
+            <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
+            <a runat="server" id="menuTerms" href="terms">Terms</a>
+            <a runat="server" id="menuQuizzes" href="quizzes">Quizzes</a>
+            <a runat="server" id="menuCalendar" href="calendar">Calendar</a>
         </div>
         <div id="profileSubMenu" class="sidenav">
-            <a href="#" onclick="closeAllMenus()">Spring 2025 (202520)</a>
-            <a href="#" onclick="closeAllMenus()">Fall 2025 (202510)</a>
-            <a href="#" onclick="closeAllMenus()">Summer 2024 (202430)</a>
+            <asp:Repeater ID="termsRepeater" runat="server">
+                <ItemTemplate>
+                    <a href="trm_<%# Eval("ID") %>" ping="sections">
+                        <%# Eval("Name") %> <%# Eval("SchoolYear") %> (<%# Eval("ID") %>)</a>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
         <!--------------------------->
-        <div onclick="closeAllMenus()" class="container body-content">
+        <div class="container-fluid body-content h-100 d-flex justify-content-center" style="max-height: 85vh; min-height: 85vh; z-index: -2">
+            <main class="row d-flex justify-content-center px-4" style="max-width: 70vw; min-width: 70vw; max-height: 50vh">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </main>
+            <footer class="position-fixed sticky-bottom w-100 ps-3" style="background-color: #1c4e80">
+                <p><a class="text-light" href="Sitemap.aspx">Sitemap</a></p>
+                <p><a class="text-light" href="Privacy.aspx">Privacy</a></p>
             </footer>
         </div>
         <asp:ScriptManager runat="server">
@@ -101,7 +187,11 @@
     </form>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+        <%: Scripts.Render("~/Scripts/profileMenu.js") %>
+        <%: Scripts.Render("~/Scripts/quizManagement.js") %>
+        <%: Scripts.Render("~/Scripts/sectionsview.js") %>
+        <%: Scripts.Render("~/Scripts/studentview-codebehind.js") %>
+        <%: Scripts.Render("~/Scripts/terms_view.js") %>
     </asp:PlaceHolder>
-
 </body>
 </html>
