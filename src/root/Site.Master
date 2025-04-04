@@ -18,22 +18,100 @@
     <script defer src="Scripts/profileMenu.js"></script>
     <link rel="stylesheet" href="Content/profileMenuStyles.css" />
 
+    <!--custom styling-->
+    <style>
+        footer {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .custom-navbar {
+            background-color: #1c4e80;
+            padding: 5px;
+        }
+
+        .custom-navbar a {
+            color: white;
+            font-family: Verdana;
+            font-size: 16px;
+        }
+
+        .navbar-brand img {
+            max-height: 48px;   
+        }
+
+        .about-content {
+            
+        }
+        main h3 {
+            text-align: center;
+        }
+        .aboutcontent1, .aboutcontent2, .aboutcontent3 {
+            background-color: #f9f9f9;
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #sitelinks {
+             background-color: #f9f9f9;
+             padding: 20px; 
+             margin-bottom: 20px; 
+             border-radius: 5px; 
+             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+             text-align: center;
+             list-style-type: none;
+        }
+
+        #sitelinks li a {
+             display: inline-block;
+             padding: 10px 20px;          
+             background-color: #1c4e80;   
+             color: white;                
+             text-decoration: none;       
+             border-radius: 5px;          
+             margin-bottom: 10px;         
+             transition: background-color 0.3s; 
+        }
+
+        #defaultview {
+            background-color: #f9f9f9;
+padding: 20px; 
+margin-bottom: 20px; 
+border-radius: 5px; 
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+text-align: center;
+        }
+    </style>
+
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100 h-100">
     <form runat="server">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm custom-navbar">
             <div class="container">
-                <a class="navbar-brand" runat="server" href="~/">Application name</a>
+
+                <!--Class navbar-brand to hold logo-->
+                <a class="navbar-brand" runat="server" href="~/">
+                    <img src="Images/JSCCproj.png" alt="Logo placeholder" />
+                </a>
+
+                <!--Mobile menu-->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!--Global Navigation links-->
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
+
+                <!--Login section-->
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="navbar-nav navbar-right">
@@ -72,12 +150,15 @@
             <a href="#" onclick="closeAllMenus()">Summer 2024 (202430)</a>
         </div>
         <!--------------------------->
-        <div onclick="closeAllMenus()" class="container body-content">
+        <div onclick="closeAllMenus()" class="container body-content h-100">
+            <main class="flex-grow-1 w-100 px-4">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            </main>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p><a href="Sitemap.aspx">Sitemap</a></p>
+                <p><a href="Privacy.aspx">Privacy</a></p>
             </footer>
         </div>
         <asp:ScriptManager runat="server">

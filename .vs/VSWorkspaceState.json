@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\root"
   ],
-  "SelectedNode": "\\coding-lms.us.sln",
+  "SelectedNode": "\\src\\root\\Site.Master",
   "PreviewInSolutionExplorer": false
 }
