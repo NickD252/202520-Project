@@ -1,33 +1,42 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Enrollment.aspx.cs" Inherits="coding_lms._Default" %>
 
+<asp:Content ID="Content" ContentPlaceholderId="MainContent"  runat="server">
 <asp:Repeater ID="enrollmentRepeater" runat="server">
     <!--Create header template-->
     <HeaderTemplate>
-        <!--Create table-->
-        <table id="enrollmentViewTable" class="table table-hover table-bordered table-striped table-light">
+        <!--Create div-->
+        <div class="d-flex justifiy-content-center">
+                    <!--Create table-->
+         <table id="enrollmentViewTable" class="table table-hover table-bordered table-striped table-light">
+                
             <!--Create table head-->
             <thead style="border: 1px solid black">
                 <!--Create table rows-->
                 <tr>
                     <!--Create table headers for the rows-->
-                    <th width="10%">Term</th>
-                    <th width="10%">Course</th>
-                    <th width="10%">CRN</th>
-                    <th width="10%">Students</th>
+                    <th width="10%">&nbsp;Term</th>
+                    <th width="10%">&nbsp;Course</th>
+                    <th width="10%">&nbsp;CRN</th>
+                    <th width="10%">&nbsp;Students</th>
                 </tr>
             </thead>
     </HeaderTemplate>
+   
     <!--Create Item Template-->
     <ItemTemplate>
         <tr class="table-group-divider">
             <td><%# Eval("Term") %></td>
             <td><%# Eval("Course") %></td>
             <td><%# Eval("CRN") %></td>
-            <td><button type="button" class="btn" ondblclick="toStudentList()">Students</button></td>
+            <td><%# Eval("Students") %></td>
+        </tr>
     </ItemTemplate>
+    
     <FooterTemplate>
-        </table>
+     </div>
+      </table>
     </FooterTemplate>
+    
 </asp:Repeater>
 <!--End Repeater-->
 
@@ -35,9 +44,4 @@
 <script defer src="Content/enrollment.css"></script>
 <script defer src="Scripts/EnrollmentView.js"></script>
 
-<!--Create script for Students button function-->
-<script>
-    function toStudentList() {
-        window.location.href = "students.aspx";
-    }
-</script>
+</asp:Content>
