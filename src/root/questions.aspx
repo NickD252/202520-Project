@@ -1,11 +1,10 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="questions.aspx.cs" Inherits="coding_lms.Questions" %>
 
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Questions</title>
-    <script type="text/javascript" src="modal.js"></script>
+    <script type="text/javascript" src="scripts/modal.js"></script>
     <style>
         /* Basic styling */
         body {
@@ -54,14 +53,14 @@
             color: white;
             padding: 0px 10px;
             border: none;
-            width:125px;
-            height:50px;
+            width: 125px;
+            height: 50px;
             cursor: pointer;
-            border-radius:10px;
-            font-size:30px;
-            font-weight:bold;
-            margin-left:30px;
-            margin-top:10px;
+            border-radius: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 30px;
+            margin-top: 10px;
         }
 
         #newQuestionBtn:hover {
@@ -118,21 +117,19 @@
     </style>
 </head>
 <body>
- <div id="menu">
-     <ul>
-         <li><a href="#">Home</a></li>
-         <li><a href="#">Questions</a></li>
-         <li><a href="#">Settings</a></li>
-     </ul>
- </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+
     <!-- Button to trigger modal -->
     <button id="newQuestionBtn" class="green-button" onclick="openModal()">New</button>
-     
-    <!-- Adds Header text and sets size and placement -->
- <p style="font-size:50px;text-align:center;">Questions
 
-    <!-- Left menu (you can customize it as per your need) -->
-  
+    <!-- Header text -->
+    <p style="font-size: 50px; text-align: center;">Questions</p>
 
     <!-- Table for listing questions -->
     <table id="questionsTable">
@@ -194,6 +191,5 @@
             </form>
         </div>
     </div>
-<script src="modal.js"></script>
 </body>
 </html>
