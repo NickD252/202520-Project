@@ -87,10 +87,10 @@ text-align: center;
     </style>
 
 </head>
-<body class="d-flex flex-column min-vh-100 h-100">
-    <form runat="server">
+<body class="d-flex flex-column h-85">
+    <form runat="server" style="max-height: 90vh">
         <!--Navigation bar-->
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm custom-navbar">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm custom-navbar" style="z-index: 2">
             <div class="container">
 
                 <!--Class navbar-brand to hold logo-->
@@ -154,16 +154,15 @@ text-align: center;
             </asp:Repeater>
         </div>
         <!--------------------------->
-        <div onclick="closeAllMenus()" class="container body-content h-100">
-            <main class="flex-grow-1 w-100 px-4">
+        <div class="container-fluid body-content h-100 d-flex justify-content-center" style="max-height: 85vh; min-height: 85vh; z-index: -2">
+            <main class="row d-flex justify-content-center px-4" style="max-width: 70vw; min-width: 70vw; max-height: 50vh">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
 
             </asp:ContentPlaceHolder>
             </main>
-            <hr />
-            <footer>
-                <p><a href="Sitemap.aspx">Sitemap</a></p>
-                <p><a href="Privacy.aspx">Privacy</a></p>
+            <footer class="position-absolute sticky-bottom w-100 ps-3" style="background-color: #1c4e80">
+                <p><a class="text-light" href="Sitemap.aspx">Sitemap</a></p>
+                <p><a class="text-light" href="Privacy.aspx">Privacy</a></p>
             </footer>
         </div>
         <asp:ScriptManager runat="server">
