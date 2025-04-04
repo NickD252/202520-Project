@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Enrollment.aspx.cs" Inherits="coding_lms._Default" %>
 
-<asp:Repeater ID="enrollmentRepeater" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Repeater ID="enrollmentRepeater" runat="server">
     <!--Create header template-->
     <HeaderTemplate>
         <!--Create table-->
@@ -31,7 +31,8 @@
 </asp:Repeater>
 <!--End Repeater-->
 
-<!--JS reference-->
+<!--JS and CSS references-->
+<script defer src="Content/enrollment.css"></script>
 <script defer src="Scripts/EnrollmentView.js"></script>
 
 <!--Create script for Students button function-->
