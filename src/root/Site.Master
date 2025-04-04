@@ -10,14 +10,10 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Styles.Render("~/Content/profileMenuStyles.css") %>
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-    <!--Style and JS references-->
-    <script defer src="Scripts/profileMenu.js"></script>
-    <link rel="stylesheet" href="Content/profileMenuStyles.css" />
-
 </head>
 <body>
     <form runat="server">
@@ -61,19 +57,23 @@
         </nav>
         <!---Profile Menu elements--->
         <div id="profileMenuNav" class="sidenav">
-            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
-            <a id="menuTerms" href="#" onclick="displayTerms()">Terms</a>
-            <a id="menuQuizzes" href="#" onclick="closeAllMenus()">Quizzes</a>
-            <a id="menuCalendar" href="#" onclick="closeAllMenus()">Calendar</a>
+            <a href="javascript:void(0)" id="close" class="closebtn">&times;</a>
+            <a id="menuTerms" href="terms">Terms</a>
+            <a id="menuQuizzes" href="quizzes">Quizzes</a>
+            <a id="menuCalendar" href="calendar">Calendar</a>
         </div>
         <div id="profileSubMenu" class="sidenav">
-            <a href="#" onclick="closeAllMenus()">Spring 2025 (202520)</a>
-            <a href="#" onclick="closeAllMenus()">Fall 2025 (202510)</a>
-            <a href="#" onclick="closeAllMenus()">Summer 2024 (202430)</a>
+            <asp:Repeater ID="termsRepeater" runat="server">
+                <ItemTemplate>
+                    <a href="terms">
+                        <%# Eval("Name") %> <%# Eval("SchoolYear") %> (<%# Eval("ID") %>)</a>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
         <!--------------------------->
-        <div onclick="closeAllMenus()" class="container body-content">
+        <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
@@ -101,7 +101,11 @@
     </form>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+        <%: Scripts.Render("~/Scripts/profileMenu.js") %>
+        <%: Scripts.Render("~/Scripts/quizManagement.js") %>
+        <%: Scripts.Render("~/Scripts/sectionsview.js") %>
+        <%: Scripts.Render("~/Scripts/studentview-codebehind.js") %>
+        <%: Scripts.Render("~/Scripts/terms_view.js") %>
     </asp:PlaceHolder>
-
 </body>
 </html>
