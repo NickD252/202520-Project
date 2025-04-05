@@ -19,10 +19,11 @@ namespace coding_lms
 			{
 				var instructorDb = new InstructorDB();
 				var quizzes = instructorDb.GetQuizzesView();
+                var questions = instructorDb.GetQuestion(id: 1);
 
 				quizRepeater.DataSource = quizzes;
 				quizRepeater.DataBind();
-			}
+            }
 		}
 	}
 }
