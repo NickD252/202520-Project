@@ -4,8 +4,6 @@
     <asp:Repeater ID="enrollmentRepeater" runat="server">
    
         <HeaderTemplate>
-            <!--Create div-->
-            <div class="d-flex justifiy-content-center">
                 <!--Create table-->
                 <table id="enrollmentViewTable" class="table table-hover table-bordered table-striped table-light">
 
@@ -27,12 +25,12 @@
                 <td><%# Eval("Term") %></td>
                 <td><%# Eval("Course") %></td>
                 <td><%# Eval("CRN") %></td>
-                <td><%# Eval("Students") %></td>
+                <td><%# Eval("StudentCount") %></td>
             </tr>
         </ItemTemplate>
 
         <FooterTemplate>
-            </div>
+
       </table>
         </FooterTemplate>
 
