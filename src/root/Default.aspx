@@ -1,9 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="coding_lms._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="coding_lms.Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<!DOCTYPE html>
 
-    <main id="defaultview">
-        <section class="row" aria-labelledby="aspnetTitle"/>
-    </main>
-
-</asp:Content>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>

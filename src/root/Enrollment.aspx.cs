@@ -17,7 +17,7 @@ namespace coding_lms {
 			// Add condition to check for enrollment on page load.
 			if (!IsPostBack)
 			{
-				var InstructorDB instructorDb = new InstructorDB();
+				var InstructorDB; instructorDb = new InstructorDB();
 				var IEnumurable<EnrollmentView> Enrollment = instructorDb.GetEnrollmentViews();
 
 				// Data bind enrollment data in a repeater.
