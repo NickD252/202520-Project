@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace coding_lms {
+namespace coding_lms
+{
 
 
-	public partial class _Default {
-	}
+    public partial class Default
+    {
+    }
 }
