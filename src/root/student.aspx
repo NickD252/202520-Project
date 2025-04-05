@@ -56,17 +56,17 @@
 
                                  <h3 class="d-flex flex-row justify-content-start">Name</h3>
                                  <!-- Last Name input -->
-                                 <div class="input-group mb-3">
+                                 <div class="input-group_mb-1">
 
-                                     <span class="input-group-text" id="lastNameInput">Last:</span>
-                                     <input type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="lastNameInput" />
+                                     <span class="input-group-text">Last:</span>
+                                     <input id="lastNameInput" type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="lastNameInput" />
 
                                  </div>
                                  <!-- First Name input -->
-                                 <div class="input-group mb-3">
+                                 <div class="input-group_mb-2">
 
-                                     <span class="input-group-text" id="firstNameInput">First:</span>
-                                     <input type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="firstNameInput" />
+                                     <span class="input-group-text">First:</span>
+                                     <input id="firstNameInput" type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="firstNameInput" />
 
                                  </div>
 
@@ -74,17 +74,17 @@
 
                                  <h3>Group</h3>
                                  <!-- Record # input -->
-                                 <div class="input-group mb-3">
+                                 <div class="input-group_mb-3">
 
-                                     <span class="input-group-text" id="recordNumInput">Record #:</span>
-                                     <input type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="recordNumInput" />
+                                     <span class="input-group-text">Record #:</span>
+                                     <input id="recordNumInput" type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="recordNumInput"/>
 
                                  </div>
                                  <!-- Email input -->
-                                 <div class="input-group mb-3">
+                                 <div class="input-group_mb-4">
 
-                                     <span class="input-group-text" id="emailInput">Email:</span>
-                                     <input type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="emailInput" />
+                                     <span class="input-group-text">Email:</span>
+                                     <input id="emailInput" type="text" class="form-control" placeholder="Line 1" aria-label="Line 1" aria-describedby="emailInput" />
 
                                  </div>
 
@@ -178,57 +178,46 @@
          </div>
 
          <!-- default page table -->
-     <table class="table">
+     <asp:Repeater ID="studentRepeat" runat="server">
 
-         <thead>
+         <HeaderTemplate>
+             <table class="table">
+                 <thead>
 
-         <tr>
+                     <tr>
 
-             <th>Last</th>
-             <th>First</th>
-             <th>Email</th>
+                         <th>Last</th>
+                         <th>First</th>
+                         <th>Email</th>
 
-         </tr>
+                     </tr>
 
-         </thead>
+                 </thead>
+         </HeaderTemplate>
+         <ItemTemplate>
 
-         <tbody id="stdntTblBdy">
+             <tbody id="stdntTblBdy">
 
-         <tr>
+                 <tr>
 
-             <td><a href="#">Text</a></td>
-             <td><a href="#">Text</a></td>
-             <td><a href="#">identifier@domain.tld</a></td>
+                     <td id="lstNme"><%# Eval("LastName") %></td>
+                     <td id="frstNme"><%# Eval("FirstName") %></td>
+                     <td id="email"><%# Eval("Email") %></td>
+                     <td id="rcrdNum"><%# Eval("SRN") %></td>
 
-         </tr>
+                 </tr>
 
-         <tr>
+             </tbody>
 
-             <td><a href="#">Text</a></td>
-             <td><a href="#">Text</a></td>
-             <td><a href="#">identifier@domain.tld</a></td>
 
-         </tr>
+         </ItemTemplate>
+         <FooterTemplate>
+             <table>
 
-         <tr>
 
-             <td><a href="#">Text</a></td>
-             <td><a href="#">Text</a></td>
-             <td><a href="#">identifier@domain.tld</a></td>
+         </FooterTemplate>
 
-         </tr>
-
-         <tr>
-
-             <td><a href="#">Text</a></td>
-             <td><a href="#">Text</a></td>
-             <td><a href="#">identifier@domain.tld</a></td>
-
-         </tr>
-
-         </tbody>
-
-     </table>
+     </asp:Repeater>
 
  </main>
 
