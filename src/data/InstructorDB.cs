@@ -35,7 +35,7 @@ namespace coding_lms.data {
 				, new Quiz{ID = 5, UUID=Guid.NewGuid(), Name = "Quiz #3", Short = "Quiz_3", IsRandom = true, PPQ = 100, Time = 512 }
 				, new Quiz{ID = 7, UUID=Guid.NewGuid(), Name = "Quiz #4", Short = "Quiz_4", IsRandom = false, PPQ = 5, Time = 4096 }
 				, new Quiz{ID = 9, UUID=Guid.NewGuid(), Name = "Quiz #5", Short = "Quiz_5", IsRandom = false, PPQ = 5000, Time = 256 }
-			};
+            };
 #endif
 		/// <summary>
 		/// Returns all Quizzes currently available
@@ -238,7 +238,7 @@ namespace coding_lms.data {
 		public IEnumerable<Term> GetTerms() {
 #if DEBUG
 			return new List<Term>(){
-				new Term{ID = 202520, SchoolYear=2025, Name=TermEnum.Spring},
+                new Term{ID = 202520, SchoolYear=2025, Name=TermEnum.Spring},
 				new Term{ID = 202510, SchoolYear=2025, Name=TermEnum.Fall },
 				new Term{ID = 202430, SchoolYear=2024, Name=TermEnum.Summer },
 				new Term{ID=202420, SchoolYear=2024, Name=TermEnum.Spring}
