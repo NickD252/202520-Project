@@ -5,6 +5,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 using Microsoft.AspNet.Identity;
+using coding_lms.data;
+using System.Linq;
 
 namespace coding_lms {
 	public partial class SiteMaster : MasterPage {
@@ -54,12 +56,23 @@ namespace coding_lms {
 		}
 
 		protected void Page_Load ( object sender , EventArgs e ) {
+            if (!IsPostBack)
+            {
+                var instructorDb = new InstructorDB();
+                var terms = instructorDb.GetTerms()
+                    .OrderByDescending(t => t.SchoolYear)
+                    .ThenByDescending(t => t.ID)
+                    .Take(3)
+                    .ToList();
 
-		}
+                termsRepeater.DataSource = terms;
+                termsRepeater.DataBind();
+            }
+        }
 
 		protected void Unnamed_LoggingOut ( object sender , LoginCancelEventArgs e ) {
 			Context.GetOwinContext ().Authentication.SignOut ( DefaultAuthenticationTypes.ApplicationCookie );
 		}
-	}
+    }
 
 }
