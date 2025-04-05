@@ -4,18 +4,21 @@ $(document).ready(function () {
         $("#editStdnt").modal("show");
         $("#lastNameInput").val($(this).find("td:eq(0)").text());
         $("#firstNameInput").val($(this).find("td:eq(1)").text());
+
         let rcrdNum = $(this).find("td:eq(3)").text().trim();
         let hiddenPortion = rcrdNum.substring(0, 4) + "*".repeat(rcrdNum.length - 4);
         $("#recordNumInput").val(hiddenPortion);
+
         let email = $(this).find("td:eq(2)").text().trim();
-        let delimeter = "@";
-        let frstPrtion = email.split(delimeter)[0];
-        let firstLetter = frstPrtion[0];
-        let middlePart = frstPrtion.substring(firstLetter, lastLetter);
-        let astrisk = middlePart.replace(/./g, '*');
-        let lastLetter = frstPrtion.substring(frstPrtion.length - 1);
-        let hideOne = middlePart + astrisk + lastLetter;
-        $("#emailInput").val(frstPrtion);
+        var firstPart = email.split("@");
+        var username = firstPart[0];
+        var domain = firstPart[1]
+        var usrnmeEdit = username[0] + "*".repeat(username.length - 2) + username[username.length - 1];
+        var domainEdtPt = domain.split(".");
+        var domainEdit = domainEdtPt[0] + ".***";
+        var emailEdit = usrnmeEdit + "@" + domainEdit;
+
+        $("#emailInput").val(emailEdit);
 });
 
     $("#stdntTblBdy td:last-child").hide();
