@@ -11,7 +11,7 @@ namespace coding_lms
 {
 
 
-    public partial class _Default
+    public partial class Enrollment
     {
 
         /// <summary>
