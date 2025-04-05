@@ -22,7 +22,7 @@ $(document).ready(function ()
         }
     })
 
-    $(".body-content").on("click", function ()
+    $(".body-content, #close").on("click", function ()
     {
         sidebar.style.width = "0";
         submenu.style.width = "0";
