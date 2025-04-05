@@ -2,8 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <main id="defaultview">
-        <section class="row" aria-labelledby="aspnetTitle"/>
+    <main class="d-flex justify-content-center">
+        <h1>CIS-255 Quiz</h1>
     </main>
 
 </asp:Content>

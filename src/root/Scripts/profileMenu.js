@@ -68,12 +68,12 @@ $(document).ready(function ()
 
     $("#menuQuizzes").on("click", function ()
     {
-        window.location.href = "/quizzes";
+        window.location.href = "quizzes";
     });
 
     $("#menuCalendar").on("click", function ()
     {
-        window.location.href = "/calendar";
+        window.location.href = "calendar";
     });
 
     $("#profileSubMenu > a").on("click", function ()
