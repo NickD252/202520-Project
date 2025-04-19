@@ -190,7 +190,7 @@
                     <option value="Number">Number</option>
                 </select><br>
 
-                <button type="button" id="saveQuestion" onclick="saveQuestion()">Save Question</button>
+                <button type="button" id="saveQuestion1" onclick="saveQuestion()">Save Question</button>
                 <button type="button" onclick="closeModal()">Cancel</button>
             </form>
         </div>
