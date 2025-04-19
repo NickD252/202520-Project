@@ -3,10 +3,10 @@ IDE: Microsoft Visual Studio 2022
 
 # Feature Assignments
 
-- **MasterPage Design:** Josh
+- **MasterPage Design:** Josh and Daniel
 - **Profile-Driven Menu:** Austin  
 - **Quiz Management:** Ethan and Austin
-- **Question Management:** Clay and Matthew  
+- **Question Management:** Clay and Matthew 
 - **Terms View:** Rylan
 - **Sections View:** Ian
 - **Enrollment View:** Timothy
