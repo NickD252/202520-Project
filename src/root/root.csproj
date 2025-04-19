@@ -199,6 +199,7 @@
     <Content Include="Images\JSCCproj.png" />
     <Content Include="Privacy.aspx" />
     <Content Include="quizzes.aspx" />
+    <Content Include="questions.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -424,6 +425,10 @@
     </Compile>
     <Compile Include="quizzes.aspx.designer.cs">
       <DependentUpon>quizzes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="questions.aspx.cs">
+      <DependentUpon>questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
