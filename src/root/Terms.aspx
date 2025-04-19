@@ -14,13 +14,14 @@
                     <thead>
                         <!--table cols-->
                         <tr>
-                            <th>
+                            <!--centerd--->
+                            <th class="d-flex justify-content-center">
                                 <h4>ID</h4>
                             </th>
-                            <th>
+                            <th class="d-flex justify-content-center">
                                 <h4>School Year</h4>
                             </th>
-                            <th>
+                            <th class="d-flex justify-content-center">
                                 <h4>Term</h4>
                             </th>
                         </tr>
