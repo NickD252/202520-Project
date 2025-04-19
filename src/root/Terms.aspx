@@ -29,9 +29,9 @@
         <ItemTemplate>
             <!--table cells-->
             <tr>
-                <td><%# Eval("ID") %></td>
-                <td><%# Eval("SchoolYear") %></td>
-                <td><%# Eval("Name") %></td>
+                <td class="text-center"><%# Eval("ID") %></td>
+                <td class="text-center"><%# Eval("SchoolYear") %></td>
+                <td class="text-center"><%# Eval("Name") %></td>
             </tr>
         </ItemTemplate>
         <FooterTemplate>
