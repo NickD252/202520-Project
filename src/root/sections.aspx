@@ -52,11 +52,7 @@
     
 <!--------------->
      <!--Scripts-->
-   <script defer src="Content/bootstrap.css"></script>
-   <script defer src="Content/sections.css"></script>
-   <script defer src="Scripts/sectionsview.js"></script>
-   <script defer src="Scripts/terms_view.js"></script>
-   <script defer src="Scripts/profileMenu.js"></script>
+   
   <!----------->
     
 </asp:Content>
