@@ -127,8 +127,6 @@
     <!--End repeater-->
 
     <!--CSS and JS script references-->
-    <script defer src="Content/bootstrap.css"></script>
-    <script defer src="Scripts/quizManagement.js"></script>
     <script>
         function goToQuestions() {
             window.location.href = 'questions';
