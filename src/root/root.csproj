@@ -259,6 +259,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="sections.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="studentStyleSheet.css" />
     <Content Include="terms.aspx" />
     <Content Include="student.aspx" />
     <Content Include="Web.config" />
