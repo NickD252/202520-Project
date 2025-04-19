@@ -5,7 +5,6 @@
     <div class="d-flex flex-row justify-content-center">
         <h1 class="text-center">Terms</h1>
     </div>
-
     <asp:Repeater ID="termsRepeater" runat="server">
         <HeaderTemplate>
             <!--size of table and location-->
