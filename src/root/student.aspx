@@ -3,45 +3,10 @@
 
      <main aria-labelledby="title">
 
-        <script defer src="Scripts/studentview-codebehind.js"></script>
+        
         <script defer src="Content/bootstrap.css"></script>
 
-     <style>
-         /* lines 10-43: default page table design */
-         tr:hover{
-
-             background-color: grey;
-
-         }
-         td a{
-
-             display: block;
-             border-color: transparent;
-
-         }
-
-         table, th, td{
-
-             border: 1px solid black;
-             text-align: center;
-
-         }
-
-         table{
-
-             width: 25%;
-             margin-left: auto;
-             margin-right: auto;
-
-         }
-
-         h1{
-
-             text-align: center;
-
-         }
-
-     </style>
+     
         
      <h1>Student</h1>
          <!-- lines 49-171: student dialog box design -->
