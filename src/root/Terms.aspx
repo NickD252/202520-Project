@@ -5,7 +5,6 @@
     <div class="d-flex flex-row justify-content-center">
         <h1 class="text-center">Terms</h1>
     </div>
-
     <asp:Repeater ID="termsRepeater" runat="server">
         <HeaderTemplate>
             <!--size of table and location-->
@@ -14,13 +13,14 @@
                     <thead>
                         <!--table cols-->
                         <tr>
-                            <th>
+                            <!--centerd--->
+                            <th class="text-center">
                                 <h4>ID</h4>
                             </th>
-                            <th>
+                            <th class="text-center">
                                 <h4>School Year</h4>
                             </th>
-                            <th>
+                            <th class="text-center">
                                 <h4>Term</h4>
                             </th>
                         </tr>
@@ -29,9 +29,9 @@
         <ItemTemplate>
             <!--table cells-->
             <tr>
-                <td><%# Eval("ID") %></td>
-                <td><%# Eval("SchoolYear") %></td>
-                <td><%# Eval("Name") %></td>
+                <td class="text-center"><%# Eval("ID") %></td>
+                <td class="text-center"><%# Eval("SchoolYear") %></td>
+                <td class="text-center"><%# Eval("Name") %></td>
             </tr>
         </ItemTemplate>
         <FooterTemplate>

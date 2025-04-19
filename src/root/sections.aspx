@@ -15,7 +15,7 @@
         <HeaderTemplate>
            <div class="d-flex justify-content-center">
             <table id="sectionViewTable" class="w-75 table table-bordered table-striped table-hover">
-                 <thead  class="table-secondary text-center"">
+                 <thead id="sectionTHead" class="table-secondary text-center"">
                   <tr>
                     <th width="5%">&nbsp;Term</th>
                     <th width="5%">&nbsp;Course</th>
@@ -52,11 +52,7 @@
     
 <!--------------->
      <!--Scripts-->
-   <script defer src="Content/bootstrap.css"></script>
-   <script defer src="Content/sections.css"></script>
-   <script defer src="Scripts/sectionsview.js"></script>
-   <script defer src="Scripts/terms_view.js"></script>
-   <script defer src="Scripts/profileMenu.js"></script>
+   
   <!----------->
     
 </asp:Content>
